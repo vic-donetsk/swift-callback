@@ -16,14 +16,6 @@ let widget = document.createElement('div');
 widget.setAttribute('id', 'swift-widget');
 document.body.appendChild(widget);
 
-/**
- * We'll load the axios HTTP library which allows us to easily issue requests
- * to our Laravel back-end. This library automatically handles sending the
- * CSRF token as a header based on the value of the "XSRF" token cookie.
- */
-
-window.axios = require('axios');
-
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 window.SwiftWidgetEventBus = new Vue();
@@ -37,8 +29,15 @@ Vue.component('page-vk', PageVK);
 Vue.component('page-telegram', PageTelegram);
 Vue.component('page-viber', PageViber);
 
-
 // Init base component
 const LayoutComponent = Vue.extend(WidgetComponent);
 const vm = new LayoutComponent();
-vm.$mount('#swift-widget');
+
+
+
+axios.get('./lang/en.json').then((request) => {
+    window.swiftCallbackTranslations  = request.data;
+
+    vm.$mount('#swift-widget');
+});
+

@@ -3,17 +3,18 @@ module.exports = {
         /**
          * Translate the given key.
          */
-        __(file, key, replace) {
-            var translation = window.translations[file] &&
-            window.translations[file][key]
-                ? window.translations[file][key]
-                : key;
+        __(key, replace) {
+            if (window.swiftCallbackTranslations) {
+                var translation = window.swiftCallbackTranslations[key] ? window.swiftCallbackTranslations[key] : '';
 
-            _.forEach(replace, (value, key) => {
-                translation = translation.replace(':' + key, value)
-            });
+                _.forEach(replace, (value, key) => {
+                    translation = translation.replace(':' + key, value)
+                });
 
-            return translation;
+                return translation;
+            } else {
+                return '';
+            }
         },
     },
 };

@@ -1,6 +1,6 @@
 <template>
     <div class="swift-widget-button" @click="open">
-        Button
+        {{ __('Button') }}
     </div>
 </template>
 
