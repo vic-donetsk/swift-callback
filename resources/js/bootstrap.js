@@ -7,6 +7,9 @@ import WidgetPopup from './components/widget-popup/widget-popup.vue';
 import PageVK from './pages/vk/vk.vue';
 import PageTelegram from './pages/telegram/telegram.vue';
 import PageViber from './pages/viber/viber.vue';
+import PageMessenger from './pages/messenger/messenger.vue';
+import PageWhatsapp from './pages/whatsapp/whatsapp.vue';
+import PageMail from './pages/mail/mail.vue';
 
 
 window._ = require('lodash');
@@ -28,6 +31,9 @@ Vue.component('widget-popup', WidgetPopup);
 Vue.component('page-vk', PageVK);
 Vue.component('page-telegram', PageTelegram);
 Vue.component('page-viber', PageViber);
+Vue.component('page-messenger', PageMessenger);
+Vue.component('page-whatsapp', PageWhatsapp);
+Vue.component('page-mail', PageMail);
 
 // Init base component
 const LayoutComponent = Vue.extend(WidgetComponent);

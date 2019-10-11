@@ -10,7 +10,7 @@
                           transform="translate(0.001 -0.002)" fill="#c5daf7"/>
                 </svg>
             </div>
-            <img class="swift-widget_img" src="img/illustration/vk.svg" alt="SWIFT Viber">
+            <img class="swift-widget_img" src="img/illustration/whattsapp.svg" alt="SWIFT Viber">
 <!--            <div class="swift-widget_text">-->
 <!--                Suntem și pe Viber, puteți să ne lăsați numărul de contact iar noi la rândul nostru venim cu un răspuns-->
 <!--                în scurt timp.-->
@@ -142,7 +142,7 @@
 </template>
 
 <style lang='scss' scoped>
-    @import 'vk';
+    @import 'whatsapp';
 </style>
 
-<script src="./vk.js"></script>
+<script src="./whatsapp.js"></script>
