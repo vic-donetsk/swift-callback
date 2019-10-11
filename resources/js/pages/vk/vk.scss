@@ -1,0 +1,87 @@
+//@import '@/app';
+
+.swift-widget {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 10vh;
+
+
+  &_block {
+    max-height: 947px;
+    height: 80vh;
+    width: calc(0.636 * 80vh);
+    background: #F8FBFD; //$conversationBackground;
+    box-shadow: 0 3px 12px rgba(0, 33, 95, 0.12);
+    text-align: center;
+    z-index: 5;
+  }
+
+
+  &_exit {
+    font-size: 1.7vh;
+    font-weight: 400;
+    color: #c5daf7;
+    text-align: right;
+    margin-top: 1.5vh;
+    padding-right: 3.5vh;
+    cursor: pointer;
+
+    & > * {
+      display: inline-block;
+    }
+
+    .swift-widget_cross {
+      width: 1.5vh;
+      height: 1.5vh;
+      margin-left: 1.2vh;
+    }
+  }
+
+
+  &_img {
+    width: 52%;
+  }
+
+  &_text {
+    margin: 2.2vh 10% 3.2vh;
+    line-height: 3.6vh;
+    font-size: 2.55vh;
+    font-weight: 500;
+    color: #00215F; //$mainDarkBlue;
+  }
+
+  &_button {
+    width: 68%;
+    height: 4.75vh;
+    margin: 0 auto;
+    padding-top: 1vh;
+    font-size: 1.9vh;
+  }
+
+  &_links {
+    display: flex;
+    justify-content: space-between;
+    margin: 13vh 9% 2.8vh;
+    padding: 1vh 0;
+    border-top: 1px solid #EBF5FD;
+    border-bottom: 1px solid #EBF5FD;
+    color: #E7F1F8;
+
+    .links_icon {
+      width: 3vh;
+      height: 3vh;
+      fill: #E7F1F8;
+      cursor: pointer;
+
+      &[id="viber"] {
+        fill:#7E37B1;
+      }
+    }
+  }
+  .swift-widget_created-by {
+    font-size: 1.6vh;
+    font-weight: 600;
+    color: #C5DAF7;
+  }
+}

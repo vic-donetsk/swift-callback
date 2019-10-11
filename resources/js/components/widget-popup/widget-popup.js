@@ -1,11 +1,11 @@
 export default {
     data() {
         return {
-            page: "page-telegram"
+            page: '' //"page-viber"
         }
     },
     mounted() {
-        EventBus.$on('go', (page) => {
+        SwiftWidgetEventBus.$on('go', (page) => {
             this.page = page;
         });
     }
