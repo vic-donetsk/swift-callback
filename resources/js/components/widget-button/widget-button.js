@@ -1,7 +1,7 @@
 export default {
     methods: {
         open(){
-            SwiftWidgetEventBus.$emit('go','page-vk');
+            SwiftWidgetEventBus.$emit('go','page-telegram');
         }
     }
 }

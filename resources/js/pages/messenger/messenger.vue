@@ -10,7 +10,7 @@
                           transform="translate(0.001 -0.002)" fill="#c5daf7"/>
                 </svg>
             </div>
-            <img class="swift-widget_img" src="img/illustration/telegram.svg" alt="SWIFT Viber">
+            <img class="swift-widget_img" src="img/illustration/messenger.svg" alt="SWIFT Viber">
             <!--            <div class="swift-widget_text">-->
             <!--                Suntem și pe Viber, puteți să ne lăsați numărul de contact iar noi la rândul nostru venim cu un răspuns-->
             <!--                în scurt timp.-->
@@ -142,8 +142,8 @@
 </template>
 
 <style lang='scss' scoped>
-    @import 'telegram';
+    @import 'messenger';
 </style>
 
-<script src="./telegram.js"></script>
+<script src="./messenger.js"></script>
 
