@@ -1,4 +1,4 @@
-//@import '@/app';
+@import '@/app';
 
 .swift-widget {
     display: flex;
@@ -11,7 +11,7 @@
         max-height: 947px;
         height: 80vh;
         width: calc(0.636 * 80vh);
-        background: #F8FBFD; //$conversationBackground;
+        background: $widgetBackground;
         box-shadow: 0 3px 12px rgba(0, 33, 95, 0.12);
         text-align: center;
         z-index: 5;
@@ -44,7 +44,7 @@
     }
 
     &_text {
-        margin: 2.2vh 10% 3.2vh;
+        margin: 2.2vh 15% 3.2vh;
         line-height: 3.6vh;
         font-size: 2.55vh;
         font-weight: 500;
@@ -55,7 +55,7 @@
         width: 68%;
         height: 4.75vh;
         margin: 0 auto;
-        padding-top: 1vh;
+        //padding-top: 1vh;
         font-size: 1.9vh;
     }
 

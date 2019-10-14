@@ -1,0 +1,45 @@
+//  Colors
+
+$blueGradientFrom: #214995;
+$blueGradientTo: #002262;
+
+$widgetBackground: #F8FBFD;
+// White
+$white: #FFFFFF;
+
+$media-expressions: (
+    /**
+     * Basic resolutions
+     */
+    // Extended media
+        'm': 'all and (min-width: 1px)',
+        't': 'all and (min-width: 600px)',
+        'd': 'all and (min-width: 1280px)',
+    // Limited media
+        'm-only': '(min-width: 1px) and (max-width: 599px)',
+        't-only': '(min-width: 600px) and (max-width: 1279px)',
+        'd-only': '(min-width: 1280px)',
+        'middle-d-only': '(min-width: 1080px)',
+    // Landscape orientation
+        'm-landscape': '(max-width: 767px) and (orientation: landscape)',
+        't-landscape': '(min-width: 600px) and (max-width: 1280px) and (orientation: landscape)',
+    /**
+     * Extended resolutions
+     */
+    // m extended
+        'm-iphone4': '(min-width: 320px)',
+        'm-galaxy': '(min-width: 360px)',
+        'm-iphone5': '(min-width: 375px)',
+        'm-iphone6': '(min-width: 412px)',
+    // t extended
+        't-ipad': '(min-width: 768px)',
+        't-ipad-landscape': '(min-width: 1024px)',
+        't-print': 'all and (min-width: 500px)',
+    // d extended
+        'd-wxga': '(min-width: 1366px)',
+        'd-wxgap': '(min-width: 1440px)',
+        'd-phd': '(min-width: 1600px)',
+        'd-fhd': '(min-width: 1920px)',
+        'd-3k': '(min-width: 2560px)',
+        'd-4k': '(min-width: 3840px)'
+);

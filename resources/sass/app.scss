@@ -1,5 +1,26 @@
 
+@import 'variables';
+@import 'prototypes';
 
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    padding: 0 15px;
+    color: $white;
+    cursor: pointer;
+
+    & > * {
+        &::selection {
+            background: transparent;
+        }
+    }
+
+    &.mod-blue {
+        @extend %blueGradient;
+    }
+}
 
 .swift-widget-button {
     position: fixed;

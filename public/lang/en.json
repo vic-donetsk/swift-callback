@@ -1,3 +1,26 @@
 {
-    "Button": "Button 1"
+    "Button" : "Button 1",
+    "Close" : "Închide",
+    "Created by SwiftCallBack" : "Creat de SwiftCallBack",
+    "Hi, you want us to come back with a call within 28 seconds?" : "Bună, doriți ca să revenim cu un apel în decurs de 28 de secunde?",
+    "Enter a phone number" : "Lasă un număr",
+    "I'm waiting for a call" : "Aștept un apel",
+
+    "By clicking the 'I'm waiting for a call' button, I agree to" : "Apăsând clic pe butonul “Aștept un apel”, îmi dau acordul pentru",
+    "Processing of my personal data" :  "Prelucrarea datelor personale",
+    "and" :  "și",
+    "Accept the terms of the agreement." : "Accept termenii acordului.",
+    "Choose an appropriate time for the call" : "Alege o oră potrivită pentru apel",
+    "We are also on Viber..." : "Suntem și pe Viber, puteți să ne lăsați numărul de contact iar noi la rândul nostru venim cu un răspuns în scurt timp.",
+    "We are also on VKontakte..." : "Suntem și pe VKontakte, puteți să ne\ncontactați, iar noi la rândul nostru\nvenim cu un răspuns în scurt timp. ",
+    "We are also on Telegram..." : "Suntem și pe Telegram, puteți să ne\ncontactați, iar noi la rândul nostru\nvenim cu un răspuns în scurt timp. ",
+    "We are also on WhatsApp..." : "Suntem și pe WattsApp, puteți să ne\nlăsați numărul de contact iar noi la\n rândul nostru venim cu un răspuns \nîn scurt timp. ",
+    "We are also on Messenger..." : "Suntem și pe Messenger, puteți să ne\ncontactați, iar noi la rândul nostru\nvenim cu un răspuns în scurt timp. ",
+
+    "Write in Viber" : "Scrie în Viber",
+    "Write in VKontakte" : "Scrie în VKontakte",
+    "Write in Telegram" : "Scrie în Telegram",
+    "Write in WhatsApp" : "Aștept un mesaj",
+    "Write in Messenger" : "Scrie în Messenger"
 }
+

@@ -2,7 +2,7 @@
     <section class="swift-widget">
         <div class="swift-widget_block">
             <div class="swift-widget_exit">
-<!--                <span>{{ __("swift-widget", "Close") }}</span>-->
+                <span>{{ __("Close") }}</span>
                 <svg class="swift-widget_cross" xmlns="http://www.w3.org/2000/svg" width="14.483" height="14.483"
                      viewBox="0 0 14.483 14.483">
                     <path id="Path_663" data-name="Path 663"
@@ -10,12 +10,11 @@
                           transform="translate(0.001 -0.002)" fill="#c5daf7"/>
                 </svg>
             </div>
-            <img class="swift-widget_img" src="img/illustration/whattsapp.svg" alt="SWIFT Viber">
-<!--            <div class="swift-widget_text">-->
-<!--                Suntem și pe Viber, puteți să ne lăsați numărul de contact iar noi la rândul nostru venim cu un răspuns-->
-<!--                în scurt timp.-->
-<!--            </div>-->
-<!--            <div class="swift-widget_button button mod-blue">{{ __("swift-widget", "Write in Viber") }}</div>-->
+            <img class="swift-widget_img" src="img/illustration/wattsapp.svg" alt="SWIFT Whatsapp">
+            <div class="swift-widget_text">
+                {{__("We are also on WhatsApp...")}}
+            </div>
+            <div class="swift-widget_button button mod-blue">{{ __("Write in WhatsApp") }}</div>
             <div class="swift-widget_links">
                 <svg class="links_icon" id="call" @click="call" xmlns="http://www.w3.org/2000/svg" width="36.383" height="36.673"
                      viewBox="0 0 36.383 36.673">
@@ -135,7 +134,7 @@
                     </g>
                 </svg>
             </div>
-<!--            <div class="swift-widget_created-by">{{ __("swift-widget", "Creat de SwiftCallBack") }}</div>-->
+            <div class="swift-widget_created-by">{{ __("Created by SwiftCallBack") }}</div>
 
         </div>
     </section>

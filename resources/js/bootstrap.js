@@ -40,10 +40,8 @@ const LayoutComponent = Vue.extend(WidgetComponent);
 const vm = new LayoutComponent();
 
 
-
 axios.get('./lang/en.json').then((request) => {
     window.swiftCallbackTranslations  = request.data;
-
     vm.$mount('#swift-widget');
 });
 
