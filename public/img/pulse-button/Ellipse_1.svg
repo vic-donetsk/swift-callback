@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="77.561" height="77.56" viewBox="0 0 77.561 77.56">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.087" y1="0.233" x2="0.917" y2="0.779" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#214995"/>
+      <stop offset="1" stop-color="#002262"/>
+      <stop offset="1" stop-color="#32569a"/>
+    </linearGradient>
+  </defs>
+  <g id="_1" data-name="1" transform="translate(0)">
+    <circle id="Ellipse_1" data-name="Ellipse 1" cx="38.78" cy="38.78" r="38.78" fill="url(#linear-gradient)"/>
+    <g id="solicită_apel" data-name="solicită apel" transform="translate(19.671 19.671)">
+      <g id="call" transform="translate(0)">
+        <path id="Path_1" data-name="Path 1" d="M7.746,16.783a33.5,33.5,0,0,0,14.2,14.2l4.734-4.734a1.713,1.713,0,0,1,2.152-.43,22.507,22.507,0,0,0,7.746,1.291,2.033,2.033,0,0,1,2.152,2.152v7.316a2.033,2.033,0,0,1-2.152,2.152A36.548,36.548,0,0,1,0,2.152,2.033,2.033,0,0,1,2.152,0H9.683a2.033,2.033,0,0,1,2.152,2.152A24.368,24.368,0,0,0,13.125,9.9a2.65,2.65,0,0,1-.43,2.152Z" transform="translate(0)" fill="#f8fbfd"/>
+      </g>
+    </g>
+  </g>
+</svg>

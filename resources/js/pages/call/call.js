@@ -27,6 +27,9 @@ export default {
         },
         mail() {
             SwiftWidgetEventBus.$emit('go', 'page-mail');
+        },
+        exit() {
+            SwiftWidgetEventBus.$emit('go','widget-button');
         }
     }
 
