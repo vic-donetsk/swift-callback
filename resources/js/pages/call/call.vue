@@ -1,7 +1,7 @@
 <template>
     <section class="swift-widget">
         <div class="swift-widget_block">
-            <div class="swift-widget_upper-section">
+            <div class="swift-widget_upper-section" v-if="firstApelWindow === true">
                 <div class="swift-widget_exit">
                     <span @click="exit">{{ __("Close") }}</span>
                     <svg class="swift-widget_cross" @click="exit" xmlns="http://www.w3.org/2000/svg" width="14.483" height="14.483"
@@ -15,8 +15,23 @@
                 <div class="swift-widget_text">
                     {{__("Hi, you want us to come back with a call within 28 seconds?")}}
                 </div>
-                <div class="swift-widget_button button mod-blue">{{ __("I'm waiting for a call") }}</div>
+                <div class="swift-widget_staticTimer">00:27:99</div>
+                <div class="swift-widget_flagPhoneInput"></div>
+                <div class="swift-widget_button button mod-blue" @click="launchTimer">{{ __("I'm waiting for a call") }}</div>
+                <div class="swift-widget_callMode-agree">{{ __("By clicking the 'I'm waiting for a call' button, I agree to") }}
+                    <a href="#" target="_blank" class="swift-widget_callMode-link">{{ __("Processing of my personal data") }}</a>&nbsp;
+                    {{ __("and") }}&nbsp;
+                    <a href="#" target="_blank" class="swift-widget_callMode-link">{{ __("Accept the terms of the agreement.") }}</a>
+                </div>
+                <div class="swift-widget_callback">
+                    <img class="swift-widget_clock" src="/img/clock.svg" alt="">
+                    {{ __("Choose an appropriate time for the call") }}
+                </div>
             </div>
+            <div class="swift-widget_upper-section" v-else>
+                <div class="swift-widget_workingTimer" ref="workingTimer">00:27:99</div>
+            </div>
+
             <div class="swift-widget_lower-section">
                 <div class="swift-widget_links">
                     <svg class="links_icon" id="call" @click="call" xmlns="http://www.w3.org/2000/svg" width="36.383"
