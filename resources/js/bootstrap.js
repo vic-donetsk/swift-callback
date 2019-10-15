@@ -4,6 +4,7 @@ import WidgetComponent from './components/widget/widget.vue';
 import WidgetButton from './components/widget-button/widget-button.vue';
 import WidgetPopup from './components/widget-popup/widget-popup.vue';
 
+import PageCall from './pages/call/call.vue';
 import PageVK from './pages/vk/vk.vue';
 import PageTelegram from './pages/telegram/telegram.vue';
 import PageViber from './pages/viber/viber.vue';
@@ -28,6 +29,7 @@ Vue.component('widget-component', WidgetComponent);
 Vue.component('widget-button', WidgetButton);
 Vue.component('widget-popup', WidgetPopup);
 
+Vue.component('page-call', PageCall);
 Vue.component('page-vk', PageVK);
 Vue.component('page-telegram', PageTelegram);
 Vue.component('page-viber', PageViber);

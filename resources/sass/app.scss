@@ -2,6 +2,18 @@
 @import 'variables';
 @import 'prototypes';
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Axiforma', sans-serif;
+    min-width: 320px;
+    max-width: 1920px;
+}
+
 .button {
     display: flex;
     justify-content: center;
@@ -21,6 +33,9 @@
         @extend %blueGradient;
     }
 }
+
+
+
 
 .swift-widget-button {
     position: fixed;
