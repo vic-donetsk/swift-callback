@@ -3,8 +3,13 @@ export default {
     data: function () {
         return {
             firstApelWindow: true,
+            initialTime: 2799,
+            shownTime: '00:27:99',
             stopTimer: null
         }
+    },
+    destroyed() {
+        this.finishTimer()
     },
     methods: {
         call() {
@@ -32,7 +37,7 @@ export default {
             SwiftWidgetEventBus.$emit('go', 'page-mail');
         },
         exit() {
-            SwiftWidgetEventBus.$emit('go','widget-button');
+            SwiftWidgetEventBus.$emit('go', 'widget-button');
         },
 
         // start countdown 28sec
@@ -41,36 +46,36 @@ export default {
             // TODO: handle client phone number
 
             this.firstApelWindow = false;
-            this.timer(2799);
-
-
+            this.startTimer(this.initialTime);
         },
 
-        timer(startTime) {
-
+        startTimer(startTime) {
             let time = startTime;
             let seconds = parseInt(time / 100);
-            time = parseInt(time - seconds * 100);
-            if ( seconds < 10 ) seconds = '0'+seconds;
+            let miliseconds = parseInt(time - seconds * 100);
+            if (seconds < 10) seconds = '0' + seconds;
+            if (miliseconds < 10) miliseconds = '0' + miliseconds;
 
-            let miliseconds = time;
-            if ( miliseconds < 10 ) miliseconds = '0'+miliseconds;
-            //this.$refs.workingTimer.innerHTML='00:'+seconds+':'+miliseconds;
-            console.log('00:'+seconds+':'+miliseconds);
+            this.shownTime = '00:' + seconds + ':' + miliseconds;
             startTime--;
-            if ( startTime  >= 0 ) {
-                this.stopTimer  =  setTimeout(function(){this.timer(startTime); }, 10);
-            } else {
-                //this.$refs.workingTimer.innerHTML='00:00:00';
-                this.timeEnd();
-            }
 
+            if (startTime >= 0) {
+                let vueElement = this;
+                this.stopTimer = setTimeout(function () {
+                    vueElement.startTimer(startTime);
+                }, 10);
+            } else {
+                this.shownTime = '00:00:00';
+                this.finishTimer();
+                this.timeEnd()
+            }
+        },
+        finishTimer() {
+            clearTimeout(this.stopTimer)
         },
 
         timeEnd() {
-            alert('FUCK!!!');
-            // TODO: 28sec are over. What do you want to do after?
+            // TODO: 28 sec are over. What do you want to do after?
         }
-    }
-
-}
+    },
+ }

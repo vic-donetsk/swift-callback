@@ -22,6 +22,10 @@
     z-index: 5;
   }
 
+  &_upper-section {
+    width: 100%;
+  }
+
 
   &_exit {
     font-size: 1.7vh;
@@ -66,6 +70,8 @@
 
   &_workingTimer {
     margin-top: 25vh;
+    margin-left: 13%;
+    text-align: start;
     font-size: 9vh;
     font-weight: 100;
     color: $mainDarkBlue;
