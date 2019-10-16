@@ -49,16 +49,54 @@
   }
 
   &_text {
-    margin: 2.2vh 15% 3.2vh;
+    margin: 0.7vh 8% 2.4vh;
     line-height: 3.6vh;
     font-size: 2.55vh;
     font-weight: 500;
     color: $mainDarkBlue;
   }
 
+  &_mail-message {
+    @include switch_placeholder(300, #D4DAE4);
+    @extend %swift-widget-input;
+    height: 6.3vh;
+    padding: 1.2vh 1.9vh;
+    font-size: 1.6vh;
+    line-height: 1.6vh;
+    color: #1E2E4B;
+    resize: none;
+  }
+
+  &_personal-data {
+    display: flex;
+    justify-content: space-between;
+    width: 68%;
+    margin: 0 auto;
+
+    & input {
+      @include switch_placeholder(300, #D4DAE4);
+      width: 48%;
+      height: 4.2vh;
+      padding-left: 1.9vh;
+      font-size: 1.6vh;
+      line-height: 1.6vh;
+      background: $white;
+      border: 1px solid #E3ECF5;
+      border-radius: 8px;
+      color: #1E2E4B;
+    }
+  }
+
+  &_flagPhoneInput {
+    @extend %swift-widget-input;
+    height: 4.2vh;
+    margin: 1.9vh auto 1.3vh;
+    color: #1E2E4B;
+  }
+
   &_button {
     width: 68%;
-    height: 4.75vh;
+    height: 4.2vh;
     margin: 0 auto;
     padding-top: 0.6vh;
     font-size: 1.9vh;
@@ -72,7 +110,7 @@
   &_links {
     display: flex;
     justify-content: space-between;
-    margin: 13vh 9% 2.8vh;
+    margin: 0 9% 2.8vh;
     padding: 1vh 0;
     border-top: 1px solid #EBF5FD;
     border-bottom: 1px solid #EBF5FD;

@@ -18,7 +18,11 @@
                         {{__("Hi, you want us to come back with a call within 28 seconds?")}}
                     </div>
                     <div class="swift-widget_staticTimer">00:27:99</div>
-                    <div class="swift-widget_flagPhoneInput"></div>
+                    <div class="swift-widget_flagPhoneInput">
+
+<!--                        TODO: flagPhoneInput-->
+
+                    </div>
                     <div class="swift-widget_button button mod-blue" @click="launchTimer">
                         {{ __("I'm waiting for a call") }}
                     </div>
@@ -27,8 +31,8 @@
                         {{ __("and") }}&nbsp;
                         <a href="#" target="_blank" class="swift-widget_callMode-link">{{ __("Accept the terms of the agreement.") }}</a>
                     </div>
-                    <div class="swift-widget_callback">
-                        <img class="swift-widget_clock" src="/img/clock.svg" alt="">
+                    <div class="swift-widget_callback" @click="chooseTime">
+                        <img class="swift-widget_clock" src="/img/clock.svg" alt="swift">
                         {{ __("Choose an appropriate time for the call") }}
                     </div>
                 </div>

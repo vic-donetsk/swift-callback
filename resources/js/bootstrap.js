@@ -12,6 +12,8 @@ import PageMessenger from './pages/messenger/messenger.vue';
 import PageWhatsapp from './pages/whatsapp/whatsapp.vue';
 import PageMail from './pages/mail/mail.vue';
 
+import PageChooseTime from './pages/choose-time/choose-time.vue';
+
 
 window._ = require('lodash');
 
@@ -36,6 +38,8 @@ Vue.component('page-viber', PageViber);
 Vue.component('page-messenger', PageMessenger);
 Vue.component('page-whatsapp', PageWhatsapp);
 Vue.component('page-mail', PageMail);
+
+Vue.component('page-chooseTime', PageChooseTime);
 
 // Init base component
 const LayoutComponent = Vue.extend(WidgetComponent);

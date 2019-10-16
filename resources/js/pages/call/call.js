@@ -36,6 +36,10 @@ export default {
         mail() {
             SwiftWidgetEventBus.$emit('go', 'page-mail');
         },
+
+        chooseTime() {
+            SwiftWidgetEventBus.$emit('go', 'page-chooseTime');
+        },
         exit() {
             SwiftWidgetEventBus.$emit('go', 'widget-button');
         },
@@ -43,7 +47,7 @@ export default {
         // start countdown 28sec
         launchTimer() {
 
-            // TODO: handle client phone number
+            // TODO: handle client phone number while 28 seconds countdown
 
             this.firstApelWindow = false;
             this.startTimer(this.initialTime);

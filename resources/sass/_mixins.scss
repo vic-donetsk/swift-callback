@@ -1,0 +1,19 @@
+@mixin switch_placeholder($weight: 300, $color: #D4DAE4) {
+  &::-moz-placeholder {
+    color: $color;
+    font-weight: $weight;
+  }
+
+  &::-webkit-input-placeholder {
+    color: $color;
+    font-weight: $weight;
+  }
+
+  &:focus::-webkit-input-placeholder {
+    color: transparent;
+  }
+
+  &:focus::-moz-placeholder {
+    color: transparent;
+  }
+}

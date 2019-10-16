@@ -22,7 +22,7 @@ export default {
             SwiftWidgetEventBus.$emit('go','page-whatsapp');
         },
         mail(){
-            SwiftWidgetEventBus.$emit('go','page-mail');
+            SwiftWidgetEventBus.$emit('go', 'page-mail');
         },
         exit() {
             SwiftWidgetEventBus.$emit('go','widget-button');

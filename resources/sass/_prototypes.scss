@@ -2,3 +2,9 @@
     background-image: linear-gradient(to right bottom, $blueGradientFrom, $blueGradientTo);
 }
 
+%swift-widget-input {
+    width: 68%;
+    background: $white;
+    border: 1px solid #E3ECF5;
+    border-radius: 8px;
+}

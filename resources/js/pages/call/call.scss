@@ -78,12 +78,9 @@
   }
 
   &_flagPhoneInput {
-    width: 68%;
+    @extend %swift-widget-input;
     height: 4.75vh;
     margin: 1.9vh auto 1.3vh;
-    background: $white;
-    border: 1px solid #E3ECF5;
-    border-radius: 8px;
   }
 
   &_button {
