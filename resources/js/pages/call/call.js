@@ -1,5 +1,9 @@
+import LowerSection from './../../components/lower-section/lower-section.vue';
+
 export default {
-    components: {},
+    components: {
+        'lower-section': LowerSection,
+    },
     data: function () {
         return {
             firstApelWindow: true,
@@ -12,31 +16,6 @@ export default {
         this.finishTimer()
     },
     methods: {
-        call() {
-            SwiftWidgetEventBus.$emit('go', 'page-call');
-        },
-        chat() {
-            SwiftWidgetEventBus.$emit('go', 'page-chat');
-        },
-        messenger() {
-            SwiftWidgetEventBus.$emit('go', 'page-messenger');
-        },
-        telegram() {
-            SwiftWidgetEventBus.$emit('go', 'page-telegram');
-        },
-        vk() {
-            SwiftWidgetEventBus.$emit('go', 'page-vk');
-        },
-        viber() {
-            SwiftWidgetEventBus.$emit('go', 'page-viber');
-        },
-        whatsapp() {
-            SwiftWidgetEventBus.$emit('go', 'page-whatsapp');
-        },
-        mail() {
-            SwiftWidgetEventBus.$emit('go', 'page-mail');
-        },
-
         chooseTime() {
             // TODO: when flagPhoneInput is empty, call
             // SwiftWidgetEventBus.$emit('go', 'page-chooseTimeNonumber');

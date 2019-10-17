@@ -5,6 +5,11 @@
   &_lower-section {
     width: 100%;
 
+    &.callPage {
+      .links_icon[id="call"] {
+        fill: $mainDarkBlue;
+      }
+    }
     &.messengerPage {
       .links_icon[id="messenger"] {
         fill: #0080FF;
