@@ -17,7 +17,7 @@
                 </div>
                 <div class="swift-widget_button button mod-blue">{{ __("Write in Viber") }}</div>
             </div>
-            <lower-section></lower-section>
+            <lower-section class="test"></lower-section>
 
         </div>
     </section>
