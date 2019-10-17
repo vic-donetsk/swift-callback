@@ -1,7 +1,7 @@
 export default {
     data: function () {
         return {
-            activePage: 'call',
+            activePage: '',
         }
     },
     props: ['active'],

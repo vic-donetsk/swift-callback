@@ -5,6 +5,16 @@
   &_lower-section {
     width: 100%;
 
+    &.messengerPage {
+      .links_icon[id="messenger"] {
+        fill: #0080FF;
+      }
+    }
+    &.telegramPage {
+      .links_icon[id="telegram"] {
+        fill:#0088CC;
+      }
+    }
     &.vkPage {
       .links_icon[id="vk"] {
         fill: #4C75A3;
