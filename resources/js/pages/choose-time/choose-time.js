@@ -7,6 +7,8 @@ export default {
             minutes: '',
             day: '',
             date: '',
+            approvedDate:'',
+            approvedTime: '',
             currentDate: null,
             shownDate: null,
             week: ['duminică', 'luni', 'marți', 'miercuri', 'joi', 'vineri', 'sâmbătă'],
@@ -48,7 +50,7 @@ export default {
             return currentMinute;
         },
         calcDate(date) {
-            return date.getDate() + ' ' + this.months[date.getMonth()];
+            return date.getDate() + '\u00A0' + this.months[date.getMonth()];
         },
         plusHour() {
             this.hours = this.calcHour(+(this.hours) + 1);
@@ -120,6 +122,9 @@ export default {
             if (this.status === 1) {
                 this.status = 2;
             } else {
+                this.status = 3;
+                this.approvedDate = this.day + ' (' + this.date + ') ';
+                this.approvedTime = this.hours + ':' + this.minutes;
             }
         },
 

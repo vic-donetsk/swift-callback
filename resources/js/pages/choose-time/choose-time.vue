@@ -1,10 +1,11 @@
 <template>
     <section class="swift-widget">
-        <div class="swift-widget_block">
-            <div class="swift-widget_upper-section">
+        <div class="swift-widget_block" >
+            <div class="swift-widget_upper-section" v-if="status != 3">
                 <div class="swift-widget_exit">
                     <div class="swift-widget_exit-left">
-                        <svg class="swift-widget_arrow" @click="backTo" xmlns="http://www.w3.org/2000/svg" width="13.883"
+                        <svg class="swift-widget_arrow" @click="backTo" xmlns="http://www.w3.org/2000/svg"
+                             width="13.883"
                              height="11.531" viewBox="0 0 13.883 11.531">
                             <g id="left-arrow" transform="translate(0 -41.674)">
                                 <g id="Group_314" data-name="Group 314" transform="translate(0 41.674)">
@@ -44,7 +45,7 @@
                             :
                         </div>
                         <div class="swift-widget_time-setup" v-if="status == 1">
-                            <img src="/img/angle-up.svg" @click="plusMinute "alt="swift">
+                            <img src="/img/angle-up.svg" @click="plusMinute " alt="swift">
                             <input type="number" :value="minutes">
                             <img src="/img/angle-down.svg" @click="minusMinute" alt="swift">
                         </div>
@@ -68,7 +69,7 @@
             </div>
 
 
-            <div class="swift-widget_lower-section">
+            <div class="swift-widget_lower-section" v-if="status != 3">
                 <div class="swift-widget_links">
                     <svg class="links_icon" id="call" @click="call" xmlns="http://www.w3.org/2000/svg" width="36.383"
                          height="36.673"
@@ -197,6 +198,26 @@
                     </svg>
                 </div>
                 <div class="swift-widget_created-by">{{ __("Created by SwiftCallBack") }}</div>
+            </div>
+            <div class="swift-widget_upper-section" v-if="status == 3">
+                <div class="swift-widget_exit-ok">
+                    <span @click="exit">{{ __("Close") }}</span>
+                    <svg class="swift-widget_cross" @click="exit" xmlns="http://www.w3.org/2000/svg" width="14.483"
+                         height="14.483"
+                         viewBox="0 0 14.483 14.483">
+                        <path id="Path_663" data-name="Path 663"
+                              d="M13.994,2.854,9.605,7.243l4.388,4.389A1.671,1.671,0,1,1,11.631,14L7.241,9.607,2.852,14A1.671,1.671,0,0,1,.49,11.632L4.878,7.243.489,2.854A1.671,1.671,0,0,1,2.852.491L7.241,4.88,11.63.491a1.671,1.671,0,0,1,2.363,2.364Z"
+                              transform="translate(0.001 -0.002)" fill="#c5daf7"/>
+                    </svg>
+                </div>
+                <img class="swift-widget_img-ok" src="img/illustration/ok-icon.svg" alt="SWIFT OK">
+                <div class="swift-widget_text">
+                    {{__("You commanded a call")}}
+                    {{approvedDate}}
+                    {{__("at")}}
+                    {{approvedTime}}
+                </div>
+                <div class="swift-widget_button button mod-blue" @click="exit">{{ __("Back") }}</div>
             </div>
         </div>
     </section>

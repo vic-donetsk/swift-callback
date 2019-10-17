@@ -22,7 +22,7 @@ let widget = document.createElement('div');
 widget.setAttribute('id', 'swift-widget');
 document.body.appendChild(widget);
 
-window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
+//window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 window.SwiftWidgetEventBus = new Vue();
 

@@ -6,7 +6,6 @@
   align-items: flex-end;
   padding: 10vh;
 
-
   &_block {
     display: flex;
     flex-direction: column;
@@ -25,7 +24,6 @@
   &_upper-section {
     width: 100%;
   }
-
 
   &_exit {
     display: flex;
@@ -50,9 +48,33 @@
     }
   }
 
+  &_exit-ok {
+    font-size: 1.7vh;
+    font-weight: 400;
+    color: #c5daf7;
+    text-align: right;
+
+    padding-right: 3.5vh;
+    cursor: pointer;
+
+    & > * {
+      display: inline-block;
+    }
+
+    .swift-widget_cross {
+      width: 1.5vh;
+      height: 1.5vh;
+      margin-left: 1.2vh;
+    }
+  }
 
   &_img {
     width: 52%;
+  }
+
+  &_img-ok {
+    margin: 9vh auto 4vh;
+    width: 29%;
   }
 
   &_text {
@@ -149,16 +171,17 @@
     }
   }
 
-
-
-
-
-
+  &_button {
+    width: 68%;
+    height: 4.75vh;
+    margin: 4vh auto;
+    padding-top: 0.6vh;
+    font-size: 1.9vh;
+  }
 
   &_lower-section {
     width: 100%;
   }
-
 
   &_links {
     display: flex;
