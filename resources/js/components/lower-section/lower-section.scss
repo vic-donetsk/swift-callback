@@ -4,6 +4,17 @@
 
   &_lower-section {
     width: 100%;
+
+    &.vkPage {
+      .links_icon[id="vk"] {
+        fill: #4C75A3;
+      }
+    }
+    &.viberPage {
+      .links_icon[id="viber"] {
+        fill: #7E37B1;
+      }
+    }
   }
 
   &_links {

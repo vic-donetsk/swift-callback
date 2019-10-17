@@ -1,5 +1,5 @@
 <template>
-    <div class="swift-widget_lower-section">
+    <div class="swift-widget_lower-section" :class="activePage">
         <div class="swift-widget_links">
             <svg class="links_icon" id="call" @click="call" xmlns="http://www.w3.org/2000/svg" width="36.383"
                  height="36.673"

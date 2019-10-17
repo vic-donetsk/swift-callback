@@ -17,7 +17,7 @@
                 </div>
                 <div class="swift-widget_button button mod-blue">{{ __("Write in VKontakte") }}</div>
             </div>
-            <lower-section></lower-section>
+            <lower-section active="vk"></lower-section>
         </div>
     </section>
 </template>
