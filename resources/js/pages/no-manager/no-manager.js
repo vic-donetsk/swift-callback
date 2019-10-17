@@ -1,5 +1,9 @@
+import LowerSection from './../../components/lower-section/lower-section.vue';
+
 export default {
-    components: {},
+    components: {
+        'lower-section': LowerSection,
+    },
     data: function () {
         return {
             status: 1,
@@ -18,34 +22,6 @@ export default {
         this.selectedTime = this.times[0];
     },
     methods: {
-        call() {
-            SwiftWidgetEventBus.$emit('go', 'page-call');
-        },
-        chat() {
-            SwiftWidgetEventBus.$emit('go', 'page-chat');
-        },
-        messenger() {
-            SwiftWidgetEventBus.$emit('go', 'page-messenger');
-        },
-        telegram() {
-            SwiftWidgetEventBus.$emit('go', 'page-telegram');
-        },
-        vk() {
-            SwiftWidgetEventBus.$emit('go', 'page-vk');
-        },
-        viber() {
-            SwiftWidgetEventBus.$emit('go', 'page-viber');
-        },
-        whatsapp() {
-            SwiftWidgetEventBus.$emit('go', 'page-whatsapp');
-        },
-        mail() {
-            SwiftWidgetEventBus.$emit('go', 'page-mail');
-        },
-
-        chooseTime() {
-            SwiftWidgetEventBus.$emit('go', 'page-chooseTime');
-        },
         exit() {
             SwiftWidgetEventBus.$emit('go', 'widget-button');
         },

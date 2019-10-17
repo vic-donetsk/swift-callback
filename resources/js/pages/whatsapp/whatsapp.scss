@@ -19,7 +19,7 @@
     box-shadow: 0 3px 12px rgba(0, 33, 95, 0.12);
     padding: 1.5vh 0 2.7vh;
     text-align: center;
-    z-index: 5;
+    z-index: 15;
   }
 
 
@@ -63,35 +63,7 @@
     padding-top: 0.6vh;
     font-size: 1.9vh;
   }
-
-  &_lower-section {
-    width: 100%;
-  }
-
-
-  &_links {
-    display: flex;
-    justify-content: space-between;
-    margin: 10vh 9% 2.8vh;
-    padding: 1vh 0;
-    border-top: 1px solid #EBF5FD;
-    border-bottom: 1px solid #EBF5FD;
-    color: #E7F1F8;
-
-    .links_icon {
-      width: 3vh;
-      height: 3vh;
-      fill: #E7F1F8;
-      cursor: pointer;
-
-      &[id="whatsapp"] {
-        fill:#00D935;
-      }
-    }
-  }
-  .swift-widget_created-by {
-    font-size: 1.6vh;
-    font-weight: 600;
-    color: #C5DAF7;
-  }
 }
+
+
+
