@@ -38,7 +38,12 @@ export default {
         },
 
         chooseTime() {
+            // TODO: when flagPhoneInput is empty, call
+            // SwiftWidgetEventBus.$emit('go', 'page-chooseTimeNonumber');
+            // else
+
             SwiftWidgetEventBus.$emit('go', 'page-chooseTime');
+
         },
         exit() {
             SwiftWidgetEventBus.$emit('go', 'widget-button');
@@ -46,9 +51,15 @@ export default {
 
         // start countdown 28sec
         launchTimer() {
+            // TODO: some conditions may be here:
+            // if day off or holiday, can route to
+            // SwiftWidgetEventBus.$emit('go', 'page-notWorking');
+            // if we currently have none manager available, call
+            // SwiftWidgetEventBus.$emit('go', 'page-noManager');
+
+            // else (if all okey and we make callback):
 
             // TODO: handle client phone number while 28 seconds countdown
-
             this.firstApelWindow = false;
             this.startTimer(this.initialTime);
         },

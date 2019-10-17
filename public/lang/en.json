@@ -34,9 +34,13 @@
     "Name" : "Numele",
 
     "Choose an hour that suits you and us we call as soon as possible" : "Alege o oră care îți convine și noi te telefonăm cât de curând",
+    "Currently we are not in the working chart..." : "Momentan nu suntem în graficul de lucru. Alegeți ziua și ora iar noi vă vom contacta.",
+    "We currently have none manager available..." : "Momentan  nu avem nici un manager disponibil, selectați o oră si revenim cu un apel",
 
     "You commanded a call" : "Aţi comandat un apel",
     "at" : "la ora"
+
+
 
 
 }

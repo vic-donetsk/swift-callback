@@ -13,6 +13,9 @@ import PageWhatsapp from './pages/whatsapp/whatsapp.vue';
 import PageMail from './pages/mail/mail.vue';
 
 import PageChooseTime from './pages/choose-time/choose-time.vue';
+import PageChooseTimeNonumber from './pages/choose-time-nonumber/choose-time-nonumber.vue';
+import PageNotWorking from './pages/not-working/not-working.vue';
+import PageNoManager from './pages/no-manager/no-manager.vue';
 
 
 window._ = require('lodash');
@@ -40,6 +43,9 @@ Vue.component('page-whatsapp', PageWhatsapp);
 Vue.component('page-mail', PageMail);
 
 Vue.component('page-chooseTime', PageChooseTime);
+Vue.component('page-chooseTimeNonumber', PageChooseTimeNonumber);
+Vue.component('page-notWorking', PageNotWorking);
+Vue.component('page-noManager', PageNoManager);
 
 // Init base component
 const LayoutComponent = Vue.extend(WidgetComponent);
