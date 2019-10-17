@@ -1,5 +1,9 @@
+import LowerSection from './../../components/lower-section/lower-section.vue';
+
 export default {
-    components: {},
+    components: {
+        'lower-section': LowerSection,
+    },
     data: function () {
         return {}
     },
