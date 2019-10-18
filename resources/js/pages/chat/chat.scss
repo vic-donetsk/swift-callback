@@ -34,7 +34,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 9.2vh;
+    height: 10.8%;
     padding: 0 4%;
     border-radius: 8px 8px 0 0;
   }
@@ -83,7 +83,58 @@
   }
 
   &_chat-dialog {
-    flex:1;
+    flex: 1;
+    width: 82%;
+    margin: 0 auto;
+    padding: 5vh 0;
+  }
+
+  &_chat-message {
+    display: flex;
+    align-items: flex-start;
+    //width: 80%;
+    margin-bottom: 3vh;
+
+    &.mod_manager-message {
+      justify-content: flex-start;
+    }
+
+    &.mod_client-message {
+      justify-content: flex-end;
+    }
+  }
+  &_chat-avatar {
+    width: 6.8vh;
+  }
+  &_message-block {
+    padding: 1vh 2.1vh;
+    border: 1px solid #E7F4FB;
+    border-radius: 1.6vh;
+
+    &.mod_manager {
+      background: $white;
+      margin-left: 1.5vh;
+      text-align: left;
+    }
+    &.mod_client {
+      background: #EFF8FD;
+      margin-right: 1.5vh;
+      text-align: right;
+    }
+
+    .message-block_text {
+      font-size: 1.6vh;
+      line-height: 2;
+      font-weight: 400;
+      color: #23324E;
+    }
+    .message-block_time {
+      font-size: 1.6vh;
+      line-height: 2;
+      font-weight: 300;
+      font-style: italic;
+      color: #88A5DB;
+    }
   }
 
   &_chat-newMessage {
@@ -91,7 +142,7 @@
     justify-content: space-between;
     align-items: flex-start;
     width: 82%;
-    height: 7.1vh;
+    height: 8.5%;
     margin: 0 auto;
     padding: 0.8vh 2vh;
     background: $white;
@@ -103,18 +154,19 @@
     .chat-newMessage_text {
       @include swift_placeholder(400, #B8D1DE);
       width: 90%;
-      //border: none;
+      border: none;
       outline: none;
       resize: none;
       font-size: 1.6vh;
+      font-family: Axiforma, sans-serif;
+      overflow: hidden;
     }
+
     .chat-newMessage_send {
-      width: 4.3%;
+      margin-top: 0.5vh;
+      width: 5.3%;
     }
   }
-
-
-
 
 
 }

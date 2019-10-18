@@ -22,7 +22,52 @@
                     </div>
                 </div>
                 <div class="swift-widget_chat-dialog">
+                    <div class="swift-widget_chat-message mod_manager-message">
+                    <img src="/img/face.svg" class="swift-widget_chat-avatar" alt="SWIFT">
+                    <div class="swift-widget_message-block mod_manager">
+                        <div class="message-block_text">Hi, how can I help you?</div>
+                        <div class="message-block_time">14:21</div>
+                    </div>
 
+
+                </div>
+                    <div class="swift-widget_chat-message mod_client-message">
+                        <div class="swift-widget_message-block mod_client">
+                            <div class="message-block_text">Hi, I have a question</div>
+                            <div class="message-block_time">14:21</div>
+                        </div>
+                        <img src="/img/user.svg" class="swift-widget_chat-avatar" alt="SWIFT">
+                    </div>
+                    <div class="swift-widget_chat-message mod_manager-message">
+                        <img src="/img/face.svg" class="swift-widget_chat-avatar" alt="SWIFT">
+                        <div class="swift-widget_message-block mod_manager">
+                            <div class="message-block_text">Hi, how can I help you?</div>
+                            <div class="message-block_time">14:21</div>
+                        </div>
+
+
+                    </div>
+                    <div class="swift-widget_chat-message mod_client-message">
+                        <div class="swift-widget_message-block mod_client">
+                            <div class="message-block_text">Hi, I have a question</div>
+                            <div class="message-block_time">14:21</div>
+                        </div>
+                        <img src="/img/user.svg" class="swift-widget_chat-avatar" alt="SWIFT">
+                    </div>
+                    <div class="swift-widget_chat-message mod_manager-message">
+                        <img src="/img/face.svg" class="swift-widget_chat-avatar" alt="SWIFT">
+                        <div class="swift-widget_message-block mod_manager">
+                            <div class="message-block_text">Hi, how can I help you?</div>
+                            <div class="message-block_time">14:21</div>
+                        </div>
+                    </div>
+                    <div class="swift-widget_chat-message mod_client-message">
+                        <div class="swift-widget_message-block mod_client">
+                            <div class="message-block_text">Hi, I have a question</div>
+                            <div class="message-block_time">14:21</div>
+                        </div>
+                        <img src="/img/user.svg" class="swift-widget_chat-avatar" alt="SWIFT">
+                    </div>
                 </div>
                 <div class="swift-widget_chat-newMessage">
                     <textarea class="chat-newMessage_text" placeholder="Scrie un mesaj…" ></textarea>
