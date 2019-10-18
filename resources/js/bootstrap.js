@@ -5,10 +5,11 @@ import WidgetButton from './components/widget-button/widget-button.vue';
 import WidgetPopup from './components/widget-popup/widget-popup.vue';
 
 import PageCall from './pages/call/call.vue';
-import PageVK from './pages/vk/vk.vue';
-import PageTelegram from './pages/telegram/telegram.vue';
-import PageViber from './pages/viber/viber.vue';
+import PageChat from './pages/chat/chat.vue';
 import PageMessenger from './pages/messenger/messenger.vue';
+import PageTelegram from './pages/telegram/telegram.vue';
+import PageVK from './pages/vk/vk.vue';
+import PageViber from './pages/viber/viber.vue';
 import PageWhatsapp from './pages/whatsapp/whatsapp.vue';
 import PageMail from './pages/mail/mail.vue';
 
@@ -35,10 +36,11 @@ Vue.component('widget-button', WidgetButton);
 Vue.component('widget-popup', WidgetPopup);
 
 Vue.component('page-call', PageCall);
-Vue.component('page-vk', PageVK);
-Vue.component('page-telegram', PageTelegram);
-Vue.component('page-viber', PageViber);
+Vue.component('page-chat', PageChat);
 Vue.component('page-messenger', PageMessenger);
+Vue.component('page-telegram', PageTelegram);
+Vue.component('page-vk', PageVK);
+Vue.component('page-viber', PageViber);
 Vue.component('page-whatsapp', PageWhatsapp);
 Vue.component('page-mail', PageMail);
 

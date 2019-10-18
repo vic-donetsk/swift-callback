@@ -9,7 +9,7 @@ export default {
         open() {
             this.visibleButton = false;
             this.visibleCircles = false;
-            SwiftWidgetEventBus.$emit('go', 'page-notWorking');
+            SwiftWidgetEventBus.$emit('go', 'page-chat');
         }
     }
 }

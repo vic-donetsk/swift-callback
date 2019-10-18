@@ -1,0 +1,123 @@
+@import '@/app';
+
+.swift-widget {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 10vh;
+
+
+  &_block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 947px;
+    height: 80vh;
+    width: calc(0.636 * 80vh);
+    background: $widgetBackground;
+    box-shadow: 0 3px 12px rgba(0, 33, 95, 0.12);
+    padding-bottom: 2.7vh;
+    text-align: center;
+    z-index: 15;
+  }
+
+  &_upper-section {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: 100%;
+  }
+
+  &_chat-header {
+    @extend %blueGradient;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 9.2vh;
+    padding: 0 4%;
+    border-radius: 8px 8px 0 0;
+  }
+
+  &_chat-header_info {
+    display: flex;
+    justify-content: flex-start;
+
+    &-img {
+      display: flex;
+      margin-right: 1.7vh;
+
+      img {
+        width: 5.7vh;
+      }
+    }
+  }
+
+  &_chat-header_info-person {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: $white;
+
+    .person_company {
+      font-size: 2.1vh;
+      font-weight: 600;
+      line-height: 1;
+    }
+
+    .person_position {
+      font-size: 1.7vh;
+      font-weight: 300;
+      line-height: 1;
+    }
+  }
+
+  &_close {
+    display: flex;
+  }
+
+  &_cross {
+    width: 1.5vh;
+    height: 1.5vh;
+    margin-left: 1.2vh;
+  }
+
+  &_chat-dialog {
+    flex:1;
+  }
+
+  &_chat-newMessage {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 82%;
+    height: 7.1vh;
+    margin: 0 auto;
+    padding: 0.8vh 2vh;
+    background: $white;
+    border: 1px solid #E3ECF5;
+    border-radius: 8px;
+    text-align: left;
+
+
+    .chat-newMessage_text {
+      @include swift_placeholder(400, #B8D1DE);
+      width: 90%;
+      //border: none;
+      outline: none;
+      resize: none;
+      font-size: 1.6vh;
+    }
+    .chat-newMessage_send {
+      width: 4.3%;
+    }
+  }
+
+
+
+
+
+}
+
+
+

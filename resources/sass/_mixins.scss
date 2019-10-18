@@ -1,4 +1,4 @@
-@mixin switch_placeholder($weight: 300, $color: #D4DAE4) {
+@mixin swift_placeholder($weight: 300, $color: #D4DAE4) {
   &::-moz-placeholder {
     color: $color;
     font-weight: $weight;

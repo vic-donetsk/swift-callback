@@ -57,7 +57,7 @@
   }
 
   &_mail-message {
-    @include switch_placeholder(300, #D4DAE4);
+    @include swift_placeholder(300, #D4DAE4);
     @extend %swift-widget-input;
     height: 6.3vh;
     padding: 1.2vh 1.9vh;
@@ -74,7 +74,7 @@
     margin: 0 auto;
 
     & input {
-      @include switch_placeholder(300, #D4DAE4);
+      @include swift_placeholder(300, #D4DAE4);
       width: 48%;
       height: 4.2vh;
       padding-left: 1.9vh;
