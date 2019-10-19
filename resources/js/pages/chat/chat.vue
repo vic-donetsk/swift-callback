@@ -22,14 +22,20 @@
                         </svg>
                     </div>
                 </div>
-                <div id="swift-widget_scrolling" class="swift-widget_chat-dialog">
-                    <div class="swift-widget_chat-message mod_manager-message">
-                        <img src="/img/face.svg" class="swift-widget_chat-avatar" alt="SWIFT">
-                        <div class="swift-widget_message-block mod_manager">
-                            <div class="message-block_text">Hi, how can I help you?</div>
-                            <div class="message-block_time">14:21</div>
-                        </div>
-                    </div>
+                <div id="swift-widget_scrolling" class="swift-widget_chat-dialog" v-html="allChatContent">
+
+<!--                    Example of layout for Manager message-->
+
+<!--                    <div class="swift-widget_chat-message mod_manager-message">-->
+<!--                        <img src="/img/face.svg" class="swift-widget_chat-avatar" alt="SWIFT">-->
+<!--                        <div class="swift-widget_message-block mod_manager">-->
+<!--                            <div class="message-block_text">Hi, how can I help you?</div>-->
+<!--                            <div class="message-block_time">14:21</div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+
+                    <!--                    Example of layout for Client message-->
+
                     <div class="swift-widget_chat-message mod_client-message">
                         <div class="swift-widget_message-block mod_client">
                             <div class="message-block_text">Hi, I have a question</div>
@@ -38,41 +44,14 @@
                         <img src="/img/user.svg" class="swift-widget_chat-avatar" alt="SWIFT">
                     </div>
 
-                    <div class="swift-widget_chat-message mod_manager-message">
-                        <img src="/img/face.svg" class="swift-widget_chat-avatar" alt="SWIFT">
-                        <div class="swift-widget_message-block mod_manager">
-                            <div class="message-block_text">Hi, how can I help you?</div>
-                            <div class="message-block_time">14:23</div>
-                        </div>
-                    </div>
-                    <div class="swift-widget_chat-message mod_client-message">
-                        <div class="swift-widget_message-block mod_client">
-                            <div class="message-block_text">Hi, I have a question</div>
-                            <div class="message-block_time">14:24</div>
-                        </div>
-                        <img src="/img/user.svg" class="swift-widget_chat-avatar" alt="SWIFT">
-                    </div>
-
-                    <div class="swift-widget_chat-message mod_manager-message">
-                        <img src="/img/face.svg" class="swift-widget_chat-avatar" alt="SWIFT">
-                        <div class="swift-widget_message-block mod_manager">
-                            <div class="message-block_text">Hi, how can I help you?</div>
-                            <div class="message-block_time">14:25</div>
-                        </div>
-                    </div>
-                    <div class="swift-widget_chat-message mod_client-message">
-                        <div class="swift-widget_message-block mod_client">
-                            <div class="message-block_text">Hi, I have a question</div>
-                            <div class="message-block_time">14:26</div>
-                        </div>
-                        <img src="/img/user.svg" class="swift-widget_chat-avatar" alt="SWIFT">
-                    </div>
-
 
                 </div>
                 <div class="swift-widget_chat-newMessage">
-                    <textarea class="chat-newMessage_text" placeholder="Scrie un mesaj…"></textarea>
-                    <img src="/img/send_button.svg" class="chat-newMessage_send" alt="send">
+                    <textarea class="chat-newMessage_text"
+                              placeholder="Scrie un mesaj…"
+                              v-model="currentMessage">
+                    </textarea>
+                    <img src="/img/send_button.svg" class="chat-newMessage_send" @click="send" alt="send">
                 </div>
 
             </div>
