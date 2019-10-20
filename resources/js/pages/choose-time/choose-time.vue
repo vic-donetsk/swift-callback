@@ -87,7 +87,7 @@
                     {{__("at")}}
                     {{approvedTime}}
                 </div>
-                <div class="swift-widget_button-back button mod-blue" @click="exit">{{ __("Back") }}</div>
+                <div class="swift-widget_button-back button mod-blue" @click="backTo">{{ __("Back") }}</div>
             </div>
         </div>
     </section>

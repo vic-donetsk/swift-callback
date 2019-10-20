@@ -32,7 +32,7 @@ export default {
     },
     methods: {
         exit() {
-            SwiftWidgetEventBus.$emit('go','widget-button');
+            SwiftWidgetEventBus.$emit('go', 'page-rating');
         },
         send() {
             let date = new Date();

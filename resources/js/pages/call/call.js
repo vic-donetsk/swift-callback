@@ -25,7 +25,7 @@ export default {
 
         },
         exit() {
-            SwiftWidgetEventBus.$emit('go', 'widget-button');
+            SwiftWidgetEventBus.$emit('go', 'page-rating');
         },
 
         // start countdown 28sec
@@ -33,7 +33,7 @@ export default {
             // TODO: some conditions may be here:
             // if day off or holiday, can route to
             // SwiftWidgetEventBus.$emit('go', 'page-notWorking');
-            // if we currently have none manager available, call
+            // if we currently have not manager available, call
             // SwiftWidgetEventBus.$emit('go', 'page-noManager');
 
             // else (if all okey and we make callback):

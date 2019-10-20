@@ -1,0 +1,97 @@
+@import '@/app';
+
+.swift-widget {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 10vh;
+
+
+  &_block {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    max-height: 947px;
+    height: 80vh;
+    width: calc(0.636 * 80vh);
+    background: $widgetBackground;
+    box-shadow: 0 3px 12px rgba(0, 33, 95, 0.12);
+    padding: 1.5vh 0 2.7vh;
+    text-align: center;
+    z-index: 15;
+  }
+
+
+  &_exit {
+    align-self: flex-end;
+    font-size: 1.7vh;
+    font-weight: 400;
+    color: #c5daf7;
+    padding-right: 3.5vh;
+    cursor: pointer;
+
+    & > * {
+      display: inline-block;
+    }
+
+    .swift-widget_cross {
+      width: 1.5vh;
+      height: 1.5vh;
+      margin-left: 1.2vh;
+    }
+  }
+
+  &_text {
+    margin: 15.1vh auto 10vh;
+    line-height: 1vh;
+    font-size: 2.28vh;
+    font-weight: 700;
+    color: $mainDarkBlue;
+  }
+
+  &_rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin: 0 auto;
+
+    input.star{
+      display: none;
+    }
+
+    .svg-icon {
+      width: 1.86vh;
+      height: 3.72vh;
+    }
+
+    label.star-left, label.star-right {
+      fill: #E7F1F8;
+      transition: all .25s;
+    }
+    label.star-right {
+      margin-right: 1.4vh;
+    }
+    label.star-left {
+      margin-left: 1.4vh;
+    }
+
+    input.star:checked ~ label.star-left {
+      fill: #ffda44;
+    }
+    input.star:checked ~ label.star-right {
+      fill: #ffcd00;
+    }
+
+
+  }
+  .star-svg {
+    width: 1.86vh;
+    height: 3.72vh;
+  }
+
+
+}
+
+
+
