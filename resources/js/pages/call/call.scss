@@ -1,10 +1,15 @@
 @import '@/app';
 
+
 .swift-widget {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  padding: 10vh;
+  //white-space: pre-line;
+
+  @include media('t') {
+    padding: 10vh;
+  }
 
 
   &_block {
@@ -12,14 +17,20 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    max-height: 947px;
-    height: 80vh;
-    width: calc(0.636 * 80vh);
+    width: 100%;
+    height: 100%;
     background: $widgetBackground;
     box-shadow: 0 3px 12px rgba(0, 33, 95, 0.12);
     padding: 1.5vh 0 2.7vh;
     text-align: center;
     z-index: 15;
+
+    @include media('t') {
+      max-height: 947px;
+      height: 80vh;
+      width: calc(0.636 * 80vh);
+    }
+
   }
 
   &_upper-section {
@@ -96,7 +107,7 @@
     margin: 1.3vh auto 0;
     font-size: 1.1vh;
     font-weight: 300;
-    color:#B5C0D1;
+    color: #B5C0D1;
   }
 
   &_callMode-link {

@@ -26,7 +26,7 @@
                     <div class="swift-widget_button button mod-blue" @click="launchTimer">
                         {{ __("I'm waiting for a call") }}
                     </div>
-                    <div class="swift-widget_callMode-agree">{{ __("By clicking the 'I'm waiting for a call' button, I agree to") }}
+                    <div class="swift-widget_callMode-agree">{{ __("By clicking the 'I'm waiting for a call' button, I agree to") }}<br>
                         <a href="#" target="_blank" class="swift-widget_callMode-link">{{ __("Processing of my personal data") }}</a>&nbsp;
                         {{ __("and") }}&nbsp;
                         <a href="#" target="_blank" class="swift-widget_callMode-link">{{ __("Accept the terms of the agreement.") }}</a>
