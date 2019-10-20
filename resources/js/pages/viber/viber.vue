@@ -15,7 +15,7 @@
                 <div class="swift-widget_text">
                     {{__("We are also on Viber...")}}
                 </div>
-                <div class="swift-widget_button button mod-blue">{{ __("Write in Viber") }}</div>
+                <div class="swift-widget_button button mod-blue" @click="startViber">{{ __("Write in Viber") }}</div>
             </div>
             <lower-section active="viber"></lower-section>
 

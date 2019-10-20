@@ -10,6 +10,9 @@ export default {
     methods: {
         exit() {
             SwiftWidgetEventBus.$emit('go', 'page-rating');
+        },
+        startViber() {
+            // TODO: integrate Viber API
         }
     }
 

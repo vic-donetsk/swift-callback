@@ -15,7 +15,7 @@
                 <div class="swift-widget_text">
                     {{__("We are also on Messenger...")}}
                 </div>
-                <div class="swift-widget_button button mod-blue">{{ __("Write in Messenger") }}</div>
+                <div class="swift-widget_button button mod-blue" @click="startMessenger">{{ __("Write in Messenger") }}</div>
             </div>
             <lower-section active="messenger"></lower-section>
         </div>

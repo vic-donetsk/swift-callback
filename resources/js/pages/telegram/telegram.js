@@ -10,6 +10,9 @@ export default {
     methods: {
         exit() {
             SwiftWidgetEventBus.$emit('go', 'page-rating');
+        },
+        startTelegram() {
+            // TODO: integrate Telegram API
         }
     }
 

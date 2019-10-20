@@ -17,7 +17,7 @@
                 </div>
                 <div class="swift-widget_button button mod-blue">{{ __("Write in Telegram") }}</div>
             </div>
-            <lower-section active="telegram"></lower-section>
+            <lower-section active="telegram" @click="startTelegram"></lower-section>
         </div>
     </section>
 </template>
