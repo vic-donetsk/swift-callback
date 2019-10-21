@@ -10,9 +10,6 @@ export default {
         return {}
     },
     methods: {
-        exit() {
-            SwiftWidgetEventBus.$emit('go', 'page-rating');
-        },
         startMessenger() {
             // TODO: integrate Messenger API
         }

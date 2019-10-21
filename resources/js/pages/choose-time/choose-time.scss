@@ -25,7 +25,7 @@
     width: 100%;
   }
 
-  &_exit {
+  &_exit-double {
     display: flex;
     justify-content: space-between;
     font-size: 1.7vh;
@@ -45,26 +45,6 @@
       width: 1.5vh;
       height: 1.5vh;
       margin: 0 0.9vh;
-    }
-  }
-
-  &_exit-ok {
-    font-size: 1.7vh;
-    font-weight: 400;
-    color: #c5daf7;
-    text-align: right;
-
-    padding-right: 3.5vh;
-    cursor: pointer;
-
-    & > * {
-      display: inline-block;
-    }
-
-    .swift-widget_cross {
-      width: 1.5vh;
-      height: 1.5vh;
-      margin-left: 1.2vh;
     }
   }
 

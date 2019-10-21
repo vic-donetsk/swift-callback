@@ -5,7 +5,7 @@ export default {
     props: ['page'],
     methods: {
         exit() {
-            if (['mail', 'rating'].indexOf(this.page) !== -1) {
+            if (['mail', 'chooseTimeNonumber', 'noManager', 'notWorking'].indexOf(this.page) !== -1) {
                 SwiftWidgetEventBus.$emit('go', 'widget-button');
             } else {
                 SwiftWidgetEventBus.$emit('go', 'page-rating');

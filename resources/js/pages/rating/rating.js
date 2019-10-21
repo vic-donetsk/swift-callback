@@ -1,10 +1,4 @@
-import ExitBlock from './../../components/exit-block/exit-block.vue';
-import LowerSection from "../../components/lower-section/lower-section";
-
 export default {
-    components: {
-        'exit-block': ExitBlock
-    },
     data: function () {
         return {
             starRating: 7
