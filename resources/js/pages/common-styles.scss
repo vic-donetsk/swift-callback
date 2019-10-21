@@ -9,4 +9,80 @@
     padding: 10vh;
   }
 
+  &_block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: $widgetBackground;
+    box-shadow: 0 3px 12px rgba(0, 33, 95, 0.12);
+    padding: 32px 0 22px;
+    text-align: center;
+    z-index: 15;
+
+    @include media('t') {
+      max-height: 947px;
+      height: 80vh;
+      width: calc(0.636 * 80vh);
+      padding: 1.5vh 0 2.7vh;
+    }
+
+  }
+
+  &_upper-section {
+    width: 100%;
+  }
+
+  &_img {
+    width: 52%;
+    @include media('m-only') {
+      margin-top: -15px;
+      width: 180px;
+      height: 154px;
+    }
+
+  }
+
+  &_text {
+    line-height: 3.6vh;
+    font-size: 2.55vh;
+    font-weight: 500;
+    color: $mainDarkBlue;
+    @include media('m-only') {
+      margin-left: 7.5%;
+      margin-right: 7.5%;
+    }
+  }
+
+  &_flagPhoneInput {
+    @extend %swift-widget-input;
+    height: 4.75vh;
+    margin: 1.9vh auto 1.3vh;
+
+    @include media('m-only') {
+      width: 80%;
+      height: 8vh;
+      margin: 4vh auto 2.4vh;
+      font-size: 2.46vh;
+
+    }
+  }
+
+  &_button {
+    width: 68%;
+    height: 4.75vh;
+    margin: 0 auto;
+    padding-top: 0.6vh;
+    font-size: 1.9vh;
+
+    @include media('m-only') {
+      width: 80%;
+      height: 8vh;
+      padding-top: 0.4vh;
+      font-size: 2.46vh;
+    }
+  }
+
 }

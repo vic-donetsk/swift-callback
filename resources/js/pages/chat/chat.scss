@@ -2,25 +2,9 @@
 
 .swift-widget {
 
-  &_block {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    max-height: 947px;
-    height: 80vh;
-    width: calc(0.636 * 80vh);
-    background: $widgetBackground;
-    box-shadow: 0 3px 12px rgba(0, 33, 95, 0.12);
-    padding-bottom: 2.7vh;
-    text-align: center;
-    z-index: 15;
-  }
-
   &_upper-section {
     display: flex;
     flex-direction: column;
-    width: 100%;
     height: 91.27%
   }
 

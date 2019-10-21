@@ -2,21 +2,6 @@
 
 .swift-widget {
 
-  &_block {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    max-height: 947px;
-    height: 80vh;
-    width: calc(0.636 * 80vh);
-    background: $widgetBackground;
-    box-shadow: 0 3px 12px rgba(0, 33, 95, 0.12);
-    padding: 1.5vh 0 2.7vh;
-    text-align: center;
-    z-index: 15;
-  }
-
   &_exit {
     display: flex;
     justify-content: flex-end;
@@ -55,7 +40,7 @@
     margin: 0 0 0 auto;
   }
 
-  &_text {
+  &_rating-text {
     margin: 15.1vh auto 10vh;
     line-height: 1vh;
     font-size: 2.28vh;

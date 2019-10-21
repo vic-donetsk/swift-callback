@@ -11,7 +11,7 @@
                           transform="translate(0.001 -0.002)" fill="#c5daf7"/>
                 </svg>
             </div>
-            <div class="swift-widget_text">{{ __("Appreciate the conversation") }}</div>
+            <div class="swift-widget_rating-text">{{ __("Appreciate the conversation") }}</div>
 
             <div class="swift-widget_rating">
 

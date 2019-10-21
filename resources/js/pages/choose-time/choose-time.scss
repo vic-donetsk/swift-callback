@@ -2,25 +2,6 @@
 
 .swift-widget {
 
-  &_block {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    max-height: 947px;
-    height: 80vh;
-    width: calc(0.636 * 80vh);
-    background: $widgetBackground;
-    box-shadow: 0 3px 12px rgba(0, 33, 95, 0.12);
-    padding: 1.5vh 0 2.7vh;
-    text-align: center;
-    z-index: 15;
-  }
-
-  &_upper-section {
-    width: 100%;
-  }
-
   &_exit-double {
     display: flex;
     justify-content: space-between;
@@ -52,10 +33,6 @@
     height: 1.5vh;
     margin: 0 0.9vh;
   }
-
-&_img {
-  width: 52%;
-}
 
 &_img-ok {
   margin: 9vh auto 4vh;
