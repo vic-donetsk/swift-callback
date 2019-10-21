@@ -2,6 +2,12 @@
 
 .swift-widget {
 
+  &_block {
+      @include media('m-only') {
+      padding-top: 0;
+    }
+  }
+
   &_upper-section {
     display: flex;
     flex-direction: column;
@@ -16,6 +22,10 @@
     height: 10.8%;
     padding: 0 4%;
     border-radius: 8px 8px 0 0;
+
+    @include media ('m-only') {
+      height: 69px;
+    }
   }
 
   &_chat-header_info {
@@ -82,33 +92,49 @@
       justify-content: flex-end;
     }
   }
+
   &_chat-avatar {
     width: 6.8vh;
   }
+
   &_message-block {
-    padding: 1vh 2.1vh;
     border: 1px solid #E7F4FB;
     border-radius: 1.6vh;
+    font-size: 1.6vh;
+
+
 
     &.mod_manager {
       background: $white;
       margin-left: 1.5vh;
+      padding: 1vh 3.2vh 1vh 2.1vh;
       text-align: left;
+
+      @include media('m-only') {
+        padding: 4px 26px 4px 10px;
+        font-size: 14px;
+      }
     }
+
     &.mod_client {
       background: #EFF8FD;
       margin-right: 1.5vh;
+      padding: 1vh 2.1vh 1vh 3.2vh;
       text-align: right;
+
+      @include media('m-only') {
+        padding: 4px 10px 4px 26px;
+        font-size: 14px;
+      }
     }
 
     .message-block_text {
-      font-size: 1.6vh;
       line-height: 2;
       font-weight: 400;
       color: #23324E;
     }
+
     .message-block_time {
-      font-size: 1.6vh;
       line-height: 2;
       font-weight: 300;
       font-style: italic;
@@ -128,6 +154,10 @@
     border: 1px solid #E3ECF5;
     border-radius: 8px;
     text-align: left;
+
+    @include media('m-only') {
+      margin-bottom: 11px;
+    }
 
 
     .chat-newMessage_text {
