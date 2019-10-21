@@ -21,7 +21,7 @@
     height: 100%;
     background: $widgetBackground;
     box-shadow: 0 3px 12px rgba(0, 33, 95, 0.12);
-    padding: 1.5vh 0 2.7vh;
+    padding: 32px 0 22px;
     text-align: center;
     z-index: 15;
 
@@ -29,6 +29,7 @@
       max-height: 947px;
       height: 80vh;
       width: calc(0.636 * 80vh);
+      padding: 1.5vh 0 2.7vh;
     }
 
   }
@@ -38,29 +39,14 @@
   }
 
 
-  &_exit {
-    font-size: 1.7vh;
-    font-weight: 400;
-    color: #c5daf7;
-    text-align: right;
 
-    padding-right: 3.5vh;
-    cursor: pointer;
-
-    & > * {
-      display: inline-block;
-    }
-
-    .swift-widget_cross {
-      width: 1.5vh;
-      height: 1.5vh;
-      margin-left: 1.2vh;
-    }
-  }
 
 
   &_img {
     width: 52%;
+    @include media('m-only') {
+      margin-top: -15px;
+    }
   }
 
   &_text {

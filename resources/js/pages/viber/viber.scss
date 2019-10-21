@@ -22,28 +22,6 @@
     z-index: 15;
   }
 
-
-  &_exit {
-    font-size: 1.7vh;
-    font-weight: 400;
-    color: #c5daf7;
-    text-align: right;
-
-    padding-right: 3.5vh;
-    cursor: pointer;
-
-    & > * {
-      display: inline-block;
-    }
-
-    .swift-widget_cross {
-      width: 1.5vh;
-      height: 1.5vh;
-      margin-left: 1.2vh;
-    }
-  }
-
-
   &_img {
     width: 52%;
   }
