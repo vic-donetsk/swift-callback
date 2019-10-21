@@ -6,28 +6,29 @@ export default {
     },
     data: function () {
         return {
-            allChatContent: '',
             currentMessage: '',
-            clientMessageLayouts1: `<div class="swift-widget_chat-message mod_client-message">
-                        <div class="swift-widget_message-block mod_client">
-                            <div class="message-block_text">`,
-            clientMessageLayouts2: `</div>
-                            <div class="message-block_time">`,
-            clientMessageLayouts3: `</div>
-                        </div>
-                        <img src="/img/user.svg" class="swift-widget_chat-avatar" alt="SWIFT">
-                    </div>`
+            messages: [
+                // TODO: these are only EXAMPLES of client/manager messages!!
+                // array must fill in chat process !!
+                { text: "Hi,I have a problem!",
+                  time: "10:00",
+                  isManager: false // client message
+                },
+                { text: "Hi,how can I help you?",
+                  time: "10:01",
+                  isManager: true // manager message
+                },
+            ],
+
 
         }
     },
     mounted(){
         let dialog = this.$el.querySelector("#swift-widget_scrolling");
-        console.log('created');
         dialog.scrollTop = dialog.clientHeight;
     },
     updated(){
         let dialog = this.$el.querySelector("#swift-widget_scrolling");
-        console.log('updated');
         dialog.scrollTop = dialog.clientHeight;
     },
     methods: {
@@ -35,17 +36,18 @@ export default {
             SwiftWidgetEventBus.$emit('go', 'page-rating');
         },
         send() {
+            // creation new client message in chat
             let date = new Date();
             let currentTime = date.getHours() + ':' + date.getMinutes();
-            this.allChatContent += this.clientMessageLayouts1 +
-                                   this.currentMessage +
-                                   this.clientMessageLayouts2 +
-                                   currentTime +
-                                   this.clientMessageLayouts3;
-            console.log(this.allChatContent);
+            let newMessage = {
+                text: this.currentMessage,
+                time: currentTime,
+                isManager: false
+            };
+            // TODO: for manager message the same object must be append to array "messages",
+            // only field "isManager" must be setting for "true"
+            this.messages.push(newMessage);
             this.currentMessage = '';
-
         }
     }
-
 }

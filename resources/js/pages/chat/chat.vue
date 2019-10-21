@@ -22,28 +22,23 @@
                         </svg>
                     </div>
                 </div>
-                <div id="swift-widget_scrolling" class="swift-widget_chat-dialog" v-html="allChatContent">
+                <div id="swift-widget_scrolling" class="swift-widget_chat-dialog">
 
-<!--                    Example of layout for Manager message-->
-
-<!--                    <div class="swift-widget_chat-message mod_manager-message">-->
-<!--                        <img src="/img/face.svg" class="swift-widget_chat-avatar" alt="SWIFT">-->
-<!--                        <div class="swift-widget_message-block mod_manager">-->
-<!--                            <div class="message-block_text">Hi, how can I help you?</div>-->
-<!--                            <div class="message-block_time">14:21</div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-
-                    <!--                    Example of layout for Client message-->
-
-<!--                    <div class="swift-widget_chat-message mod_client-message">-->
-<!--                        <div class="swift-widget_message-block mod_client">-->
-<!--                            <div class="message-block_text">Hi, I have a question</div>-->
-<!--                            <div class="message-block_time">14:22</div>-->
-<!--                        </div>-->
-<!--                        <img src="/img/user.svg" class="swift-widget_chat-avatar" alt="SWIFT">-->
-<!--                    </div>-->
-
+                    <div v-if="messages.length"
+                         v-for="message in messages">
+                        <div class="swift-widget_chat-message"
+                             :class="message.isManager ? 'mod_manager-message' : 'mod_client-message'">
+                            <img src="/img/face.svg" class="swift-widget_chat-avatar" alt="SWIFT"
+                                 v-if="message.isManager">
+                            <div class="swift-widget_message-block"
+                                :class="message.isManager ? 'mod_manager' : 'mod_client'">
+                                <div class="message-block_text">{{message.text}}</div>
+                                <div class="message-block_time">{{ message.time}}</div>
+                            </div>
+                            <img src="/img/user.svg" class="swift-widget_chat-avatar" alt="SWIFT"
+                                 v-if="!message.isManager">
+                        </div>
+                    </div>
 
                 </div>
                 <div class="swift-widget_chat-newMessage">
