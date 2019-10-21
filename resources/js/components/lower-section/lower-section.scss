@@ -54,7 +54,7 @@
     }
   }
 
-  &_links {
+  &_links-desktop {
     display: flex;
     justify-content: space-between;
     margin: 0 9% 2.8vh;
@@ -63,9 +63,33 @@
     border-bottom: 1px solid #EBF5FD;
     color: #E7F1F8;
 
+    @include media('m-only') {
+      display: none;
+    }
+
     .links_icon {
       width: 3vh;
       height: 3vh;
+      fill: #E7F1F8;
+      cursor: pointer;
+    }
+  }
+  &_links-mobile {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10% 2.8vh;
+    padding: 1.9vh 0;
+    border-top: 1px solid #EBF5FD;
+    border-bottom: 1px solid #EBF5FD;
+    color: #E7F1F8;
+
+    @include media('t') {
+      display: none;
+    }
+
+    .links_icon {
+      width: 5.6vh;
+      height: 5.6vh;
       fill: #E7F1F8;
       cursor: pointer;
     }

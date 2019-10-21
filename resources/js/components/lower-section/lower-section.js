@@ -7,6 +7,7 @@ export default {
     data: function () {
         return {
             activePage: '',
+            mobileState: ''
         }
     },
     props: ['active'],
@@ -16,16 +17,63 @@ export default {
     methods: {
         activeChange() {
           switch(this.active) {
-              case 'call': this.activePage = 'callPage'; break;
-              case 'chat': this.activePage = 'chatPage'; break;
+              case 'call': {
+                  this.activePage = 'callPage';
+                  this.mobileState = 1;
+                  break;
+              }
+              case 'chat': {
+                  this.activePage = 'chatPage';
+                  this.mobileState = 1;
+                  break;
+              }
+              case 'messenger': {
+                  this.activePage = 'messengerPage';
+                  this.mobileState = 1;
+                  break;
+              }
+              case 'telegram': {
+                  this.activePage = 'telegramPage';
+                  this.mobileState = 1;
+                  break;
+              }
+              case 'vk': {
+                  this.activePage = 'vkPage';
+                  this.mobileState = 2;
+                  break;
+              }
+              case 'viber': {
+                  this.activePage = 'viberPage';
+                  this.mobileState = 2;
+                  break;
+              }
+              case 'whatsapp': {
+                  this.activePage = 'whatsappPage';
+                  this.mobileState = 2;
+                  break;
+              }
+              case 'mail': {
+                  this.activePage = 'mailPage';
+                  this.mobileState = 2;
+                  break;
+              }
+
+              //case 'chat': this.activePage = 'chatPage'; break;
               case 'messenger': this.activePage = 'messengerPage'; break;
               case 'telegram': this.activePage = 'telegramPage'; break;
               case 'vk': this.activePage = 'vkPage'; break;
-              case 'viber': this.activePage = 'viberPage'; break;
+              //case 'viber': this.activePage = 'viberPage'; break;
               case 'whatsapp': this.activePage = 'whatsappPage'; break;
               case 'mail': this.activePage = 'mailPage'; break;
           }
         },
+        toLeftMenu() {
+            this.mobileState = 1;
+        },
+        toRightMenu() {
+            this.mobileState = 2;
+        },
+
 
 
         call() {
