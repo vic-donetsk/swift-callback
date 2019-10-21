@@ -40,8 +40,8 @@
 </template>
 
 <style lang='scss' scoped>
-    @import 'call';
     @import '../common-styles';
+    @import 'call';
 </style>
 
 <script src="./call.js"></script>

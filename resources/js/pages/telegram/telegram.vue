@@ -15,8 +15,8 @@
 </template>
 
 <style lang='scss' scoped>
-    @import 'telegram';
     @import '../common-styles';
+    @import 'telegram';
 </style>
 
 <script src="./telegram.js"></script>

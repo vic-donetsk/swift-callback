@@ -15,8 +15,8 @@
 </template>
 
 <style lang='scss' scoped>
-    @import 'vk';
     @import '../common-styles';
+    @import 'vk';
 </style>
 
 <script src="./vk.js"></script>

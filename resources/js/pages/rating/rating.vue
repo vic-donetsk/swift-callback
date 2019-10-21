@@ -101,8 +101,8 @@
 </template>
 
 <style lang='scss' scoped>
-    @import '../common-styles';
     @import 'rating';
+    @import '../common-styles';
 </style>
 
 <script src="./rating.js"></script>

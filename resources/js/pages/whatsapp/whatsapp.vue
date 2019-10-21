@@ -16,8 +16,8 @@
 </template>
 
 <style lang='scss' scoped>
-    @import 'whatsapp';
     @import '../common-styles';
+    @import 'whatsapp';
 </style>
 
 <script src="./whatsapp.js"></script>

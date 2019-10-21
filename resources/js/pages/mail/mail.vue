@@ -28,8 +28,8 @@
 </template>
 
 <style lang='scss' scoped>
-    @import 'mail';
     @import '../common-styles';
+    @import 'mail';
 </style>
 
 <script src="./mail.js"></script>

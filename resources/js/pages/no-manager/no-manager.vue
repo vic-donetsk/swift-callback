@@ -54,8 +54,8 @@
 </template>
 
 <style lang='scss' scoped>
-    @import 'no-manager';
     @import '../common-styles';
+    @import 'no-manager';
 </style>
 
 <script src="./no-manager.js"></script>

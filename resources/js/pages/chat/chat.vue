@@ -57,8 +57,8 @@
 </template>
 
 <style lang='scss' scoped>
-    @import 'chat';
     @import '../common-styles';
+    @import 'chat';
 </style>
 
 <script src="./chat.js"></script>

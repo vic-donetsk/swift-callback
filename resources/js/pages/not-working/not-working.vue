@@ -54,8 +54,8 @@
 </template>
 
 <style lang='scss' scoped>
-    @import 'not-working';
     @import '../common-styles';
+    @import 'not-working';
 </style>
 
 <script src="./not-working.js"></script>

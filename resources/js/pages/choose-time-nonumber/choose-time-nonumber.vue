@@ -54,8 +54,8 @@
 </template>
 
 <style lang='scss' scoped>
-    @import 'choose-time-nonumber';
     @import '../common-styles';
+    @import 'choose-time-nonumber';
 </style>
 
 <script src="./choose-time-nonumber.js"></script>

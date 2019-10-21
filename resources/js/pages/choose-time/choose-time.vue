@@ -76,8 +76,8 @@
 </template>
 
 <style lang='scss' scoped>
-    @import 'choose-time';
     @import '../common-styles';
+    @import 'choose-time';
 </style>
 
 <script src="./choose-time.js"></script>
