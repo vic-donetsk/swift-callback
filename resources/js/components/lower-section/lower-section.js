@@ -1,4 +1,9 @@
+import SvgSprite from './svg-sprite/svg-sprite.vue'
+
 export default {
+    components: {
+        'svg-sprite': SvgSprite,
+    },
     data: function () {
         return {
             activePage: '',
