@@ -83,15 +83,15 @@
             </div>
         </div>
 
-        <svg class="star-svg" xmlns="http://www.w3.org/2000/svg" width="22.112" height="42.059"
+        <svg xmlns="http://www.w3.org/2000/svg" width="22.112" height="42.059"
              viewBox="0 0 22.112 42.059"
              style="display:none">
-            <symbol id="star-right" class="star-svg">
+            <symbol id="star-right">
                 <path id="Path_213" data-name="Path 213"
                       d="M272.752,28.335l-14.646-3.091L250.64,12.27V48.22l13.665,6.108-1.586-14.885Z"
                       transform="translate(-250.64 -12.27)"/>
             </symbol>
-            <symbol id="star-left" class="star-svg">
+            <symbol id="star-left">
                 <path id="Path_214" data-name="Path 214"
                       d="M14.646,25.244,0,28.335,10.033,39.444,8.446,54.328,22.112,48.22V12.27Z"
                       transform="translate(0 -12.27)"/>
@@ -101,8 +101,8 @@
 </template>
 
 <style lang='scss' scoped>
-    @import 'rating';
     @import '../common-styles';
+    @import 'rating';
 </style>
 
 <script src="./rating.js"></script>

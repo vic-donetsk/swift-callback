@@ -2,6 +2,10 @@
 
 .swift-widget {
 
+  &_block {
+    justify-content: flex-start;
+  }
+
   &_exit {
     display: flex;
     justify-content: flex-end;
@@ -46,6 +50,13 @@
     font-size: 2.28vh;
     font-weight: 700;
     color: $mainDarkBlue;
+
+    @include media('m-only') {
+      margin: 30vh auto 7vh;
+      font-size: 19px;
+      font-weight: 500;
+    }
+
   }
 
   &_rating {
@@ -61,6 +72,11 @@
     .svg-icon {
       width: 1.86vh;
       height: 3.72vh;
+
+      @include media ('m-only') {
+        width: 15px;
+        height: 30px;
+      }
     }
 
     label.star-left, label.star-right {
@@ -70,10 +86,16 @@
 
     label.star-right {
       margin-right: 1.4vh;
+      @include media ('m-only') {
+        margin-right: 12px;
+      }
     }
 
     label.star-left {
       margin-left: 1.4vh;
+      @include media ('m-only') {
+        margin-left: 12px;
+      }
     }
 
     input.star:checked ~ label.star-left {
@@ -85,11 +107,6 @@
     }
 
 
-  }
-
-  .star-svg {
-    width: 1.86vh;
-    height: 3.72vh;
   }
 
 
