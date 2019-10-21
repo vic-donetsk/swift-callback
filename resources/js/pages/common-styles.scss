@@ -1,0 +1,12 @@
+@import '@/app';
+
+.swift-widget {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+
+  @include media('t') {
+    padding: 10vh;
+  }
+
+}

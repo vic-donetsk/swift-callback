@@ -29,6 +29,7 @@
 
 <style lang='scss' scoped>
     @import 'mail';
+    @import '../common-styles';
 </style>
 
 <script src="./mail.js"></script>

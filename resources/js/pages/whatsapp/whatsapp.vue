@@ -17,6 +17,7 @@
 
 <style lang='scss' scoped>
     @import 'whatsapp';
+    @import '../common-styles';
 </style>
 
 <script src="./whatsapp.js"></script>

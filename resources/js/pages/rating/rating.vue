@@ -102,6 +102,7 @@
 
 <style lang='scss' scoped>
     @import 'rating';
+    @import '../common-styles';
 </style>
 
 <script src="./rating.js"></script>

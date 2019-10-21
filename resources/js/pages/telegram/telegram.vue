@@ -16,6 +16,7 @@
 
 <style lang='scss' scoped>
     @import 'telegram';
+    @import '../common-styles';
 </style>
 
 <script src="./telegram.js"></script>

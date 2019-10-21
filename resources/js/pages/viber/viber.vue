@@ -17,6 +17,7 @@
 
 <style lang='scss' scoped>
     @import 'viber';
+    @import '../common-styles';
 </style>
 
 <script src="./viber.js"></script>

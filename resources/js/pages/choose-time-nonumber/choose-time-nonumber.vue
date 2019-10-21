@@ -55,6 +55,7 @@
 
 <style lang='scss' scoped>
     @import 'choose-time-nonumber';
+    @import '../common-styles';
 </style>
 
 <script src="./choose-time-nonumber.js"></script>

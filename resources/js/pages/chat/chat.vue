@@ -58,6 +58,7 @@
 
 <style lang='scss' scoped>
     @import 'chat';
+    @import '../common-styles';
 </style>
 
 <script src="./chat.js"></script>

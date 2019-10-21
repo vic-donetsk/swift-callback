@@ -55,6 +55,7 @@
 
 <style lang='scss' scoped>
     @import 'not-working';
+    @import '../common-styles';
 </style>
 
 <script src="./not-working.js"></script>

@@ -16,6 +16,7 @@
 
 <style lang='scss' scoped>
     @import 'messenger';
+    @import '../common-styles';
 </style>
 
 <script src="./messenger.js"></script>

@@ -55,6 +55,7 @@
 
 <style lang='scss' scoped>
     @import 'no-manager';
+    @import '../common-styles';
 </style>
 
 <script src="./no-manager.js"></script>

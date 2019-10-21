@@ -41,6 +41,7 @@
 
 <style lang='scss' scoped>
     @import 'call';
+    @import '../common-styles';
 </style>
 
 <script src="./call.js"></script>

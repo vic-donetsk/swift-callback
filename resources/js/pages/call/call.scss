@@ -2,14 +2,7 @@
 
 
 .swift-widget {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  //white-space: pre-line;
 
-  @include media('t') {
-    padding: 10vh;
-  }
 
 
   &_block {
