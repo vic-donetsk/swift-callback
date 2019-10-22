@@ -54,12 +54,6 @@
     }
   }
 
-  &_flagPhoneInput {
-    @extend %swift-widget-input;
-    height: 4.75vh;
-    margin: 1.6vh auto 1.5vh;
-  }
-
   &_button-back {
     width: 68%;
     height: 4.75vh;

@@ -21,6 +21,7 @@
     },
     "dependencies": {
         "include-media": "^1.4.9",
-        "vue": "^2.6.10"
+        "vue": "^2.6.10",
+        "vue-select-image": "^1.7.0"
     }
 }

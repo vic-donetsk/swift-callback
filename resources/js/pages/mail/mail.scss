@@ -38,11 +38,4 @@
     }
   }
 
-  &_flagPhoneInput {
-    @extend %swift-widget-input;
-    height: 4.2vh;
-    margin: 1.9vh auto 1.3vh;
-    color: #1E2E4B;
-  }
-
 }

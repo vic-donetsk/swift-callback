@@ -1,4 +1,5 @@
 import Vue from "vue";
+
 import localization from './mixins/localization.js';
 import WidgetComponent from './components/widget/widget.vue';
 import WidgetButton from './components/widget-button/widget-button.vue';
@@ -26,8 +27,6 @@ window._ = require('lodash');
 let widget = document.createElement('div');
 widget.setAttribute('id', 'swift-widget');
 document.body.appendChild(widget);
-
-//window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 window.SwiftWidgetEventBus = new Vue();
 

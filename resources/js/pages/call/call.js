@@ -11,7 +11,8 @@ export default {
             firstApelWindow: true,
             initialTime: 2799,
             shownTime: '00:27:99',
-            stopTimer: null
+            stopTimer: null,
+
         }
     },
     destroyed() {

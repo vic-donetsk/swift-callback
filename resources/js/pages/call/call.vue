@@ -12,7 +12,6 @@
                     <div class="swift-widget_staticTimer">00:27:99</div>
                     <div class="swift-widget_flagPhoneInput">
 
-                        <!--                        TODO: flagPhoneInput-->
 
                     </div>
                     <div class="swift-widget_button button mod-blue" @click="launchTimer">
