@@ -1,0 +1,81 @@
+@import '@/app';
+
+input {
+  display: none;
+}
+
+.swift-widget_flagSelect {
+  display: flex;
+  width: 65px;
+  height: 8vh;
+  background: #fff;
+  position: relative;
+
+  &::before {
+    content: url('/img/angle-down.svg');
+    background: white;
+    position: absolute;
+    right: 8px;
+    top: 12px;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  .items {
+    display: block;
+    min-height: 8vh;
+    position: absolute;
+    overflow: hidden;
+    width: 65px;
+    cursor: pointer;
+  }
+
+  #select:not(:checked) ~ .items {
+    height: 8vh;
+  }
+
+  .items label {
+    display: none;
+    width: 65px;
+    height: 8vh;
+    padding-left: 15px;
+    background: white;
+  }
+
+  .items label img {
+    width: 24px;
+    height: 16px;
+  }
+
+  .items label:hover {
+    background: #eee;
+    cursor: pointer;
+  }
+
+  #select:checked ~ .items {
+    padding-top: 8vh;
+  }
+
+  #select:checked ~ .items label {
+    display: flex;
+    align-items: center;
+    width: 65px;
+    height: 8vh;
+  }
+
+  .items input:checked + label {
+    display: flex; /*!important;*/
+    align-items: center;
+    border: none;
+    background: white;
+  }
+
+  .bg {
+    display: flex;
+    align-items: center;
+    width: 65px;
+    height: 8vh;
+    padding-left: 15px;
+  }
+
+}

@@ -12,7 +12,7 @@
                     <div class="swift-widget_staticTimer">00:27:99</div>
                     <div class="swift-widget_flagPhoneInput">
 
-
+                        <flag-select></flag-select>
                     </div>
                     <div class="swift-widget_button button mod-blue" @click="launchTimer">
                         {{ __("I'm waiting for a call") }}
