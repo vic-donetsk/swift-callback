@@ -1,6 +1,6 @@
 <template>
     <div class="swift-widget-button" @click="open">
-<!--        {{ __('Button') }}-->
+
         <div id="swift-widget-button_circle-1" :class="{mod_visible: visibleButton}">
             <img src="img/pulse-button/ellipse_1.svg"alt="SWIFT Button">
         </div>

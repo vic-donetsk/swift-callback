@@ -14,13 +14,13 @@
         bottom:                    0;
         right:                     0;
 
-        width:                     75px;
-        height:                    75px;
+        width:                     77px;
+        height:                    77px;
         border-radius:             100%;
 
-        opacity:                   0;
-        animation-duration:        1.2s;
-        animation-timing-function: ease;
+        opacity:                   1;
+        animation-duration:        2.5s;
+        animation-timing-function: ease-in-out;
         animation-iteration-count: infinite;
 
     }
@@ -31,23 +31,16 @@
         bottom:     0;
         right:      0;
 
-        width:      75px;
-        height:     75px;
-        //position: fixed;
-        //bottom:   50px;
-        //right:    50px;
+        width:      77px;
+        height:     77px;
         z-index:    5;
-
-        //position:   absolute;
-        //left:       50%;
-        //top:        50%;
 
         visibility: hidden;
         opacity:    0;
 
         img {
-            width:  75px;
-            height: 75px;
+            width:  77px;
+            height: 77px;
         }
 
         &.mod_visible {
@@ -55,108 +48,81 @@
             opacity:    1;
         }
     }
-
+    // around circles
     #swift-widget-button_circle-2 {
         background-color: #32569a;
+        transform: scale(1.25);
         z-index:          4;
 
         animation-name:   animation_circle-2;
+
     }
 
     #swift-widget-button_circle-3 {
         background-color: #6380b7;
+        transform: scale(1.5);
         z-index:          3;
 
         animation-name:   animation_circle-3;
+        animation-delay: 0.15s;
+
     }
+
 
     #swift-widget-button_circle-4 {
         background-color: #9fb3d8;
+        transform: scale(1.75);
         z-index:          2;
 
         animation-name:   animation_circle-4;
+        animation-delay: 0.30s;
+
     }
 
     #swift-widget-button_circle-5 {
         background-color: #d1dff8;
+        transform: scale(2);
         z-index:          1;
 
         animation-name:   animation_circle-5;
+        animation-delay: 0.45s;
+
     }
 }
 
 @keyframes animation_circle-2 {
     0% {
-        opacity:   0;
-        transform: scale(1);
+        transform: scale(1.25);
     }
-    15% {
-        opacity:   1;
-        transform: scale(1.2);
-    }
-    80% {
-        transform: scale(1.2);
-        opacity:   1;
-    }
-    100% {
-        opacity:   0;
-        transform: scale(1);
+    50% {
+
+        transform: scale(1.5);
     }
 }
-
 @keyframes animation_circle-3 {
     0% {
-        transform: scale(1);
-        opacity:   0;
+        transform: scale(1.5);
     }
-    30% {
-        transform: scale(1.4);
-        opacity:   1;
-    }
-    80% {
-        transform: scale(1.4);
-        opacity:   1;
-    }
-    100% {
-        opacity:   0;
-        transform: scale(1);
+    50% {
+
+        transform: scale(1.8);
     }
 }
-
 @keyframes animation_circle-4 {
     0% {
-        transform: scale(1);
-        opacity:   0;
+        transform: scale(1.75);
     }
-    45% {
-        transform: scale(1.6);
-        opacity:   1;
-    }
-    80% {
-        transform: scale(1.6);
-        opacity:   1;
-    }
-    100% {
-        opacity:   0;
-        transform: scale(1);
+    50% {
+
+        transform: scale(2.1);
     }
 }
-
 @keyframes animation_circle-5 {
     0% {
-        transform: scale(1);
-        opacity:   0;
+        transform: scale(2);
     }
-    65% {
-        transform: scale(1.8);
-        opacity:   1;
-    }
-    80% {
-        transform: scale(1.8);
-        opacity:   1;
-    }
-    100% {
-        opacity:   0;
-        transform: scale(1);
+    50% {
+
+        transform: scale(2.4);
     }
 }

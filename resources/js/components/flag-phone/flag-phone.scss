@@ -57,6 +57,7 @@
 
     @include media('m-only') {
       min-height: 43px;
+      overflow: visible;
     }
   }
 
