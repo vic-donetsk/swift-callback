@@ -17,8 +17,6 @@
     display: flex;
     justify-content: space-between;
     width: 68%;
-    //height: 400px;
-    //padding: 40px;
   }
 
   &_select {
@@ -61,6 +59,14 @@
     margin: 4vh auto;
     padding-top: 0.6vh;
     font-size: 1.9vh;
+
+    @include media('m-only') {
+      width: 80%;
+      height: 45px;
+      padding-top: 0.4vh;
+      font-size: 14px;
+      font-weight: 600;
+    }
   }
 
   &_callMode-agree {
