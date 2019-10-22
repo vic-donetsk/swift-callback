@@ -13,11 +13,9 @@
                     <input type="text" :placeholder="__('Name')" v-model="name">
 
                 </div>
-                <div class="swift-widget_flagPhoneInput">
 
-<!--                    TODO: flagPhoneInput-->
+                <flag-phone></flag-phone>
 
-                </div>
                 <div class="swift-widget_button button mod-blue" @click="sendEmail">{{ __("I am waiting for a message") }}</div>
             </div>
 

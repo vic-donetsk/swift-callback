@@ -21,11 +21,8 @@
                     </div>
                 </div>
 
-                <div class="swift-widget_flagPhoneInput">
+                <flag-phone></flag-phone>
 
-                    <!--                        TODO: flagPhoneInput-->
-
-                </div>
                 <div class="swift-widget_button button mod-blue" @click="select">
                     {{ __("I'm waiting for a call") }}
                 </div>
