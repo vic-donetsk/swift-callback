@@ -15,7 +15,6 @@ export default {
             initialTime: 2799,
             shownTime: '00:27:99',
             stopTimer: null,
-
         }
     },
     destroyed() {

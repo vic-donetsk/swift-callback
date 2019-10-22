@@ -11,14 +11,13 @@ export default {
             clientPhone: null,
             countriesPhones: [
                 {id: 1, img: 'img/flags/moldova.svg', mask: "\\+\\3\\7\\3 (11) 11-1111"},
-                {id: 2, img: 'img/flags/star-left.svg', mask: "\\+\\3\\8 (111) 111-11-11"},
-                {id: 3, img: 'img/flags/star-right.svg', mask: "\\+\\7 (111) 111-1111"}
+                {id: 2, img: '', mask: "\\+\\3\\8 (111) 111-11-11"},
+                {id: 3, img: '', mask: "\\+\\7 (111) 111-1111"}
             ],
         }
     },
     methods: {
         flagSelected() {
-            console.log(this.selected);
             this.currentMask = this.countriesPhones[this.selected-1].mask;
         },
         getPhone() {
