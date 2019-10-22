@@ -1,13 +1,13 @@
 import LowerSection from './../../components/lower-section/lower-section.vue';
 import ExitBlock from './../../components/exit-block/exit-block.vue';
-import FlagSelect from './../../components/flag-select/flag-select.vue';
+import FlagPhone from './../../components/flag-phone/flag-phone.vue';
 
 
 export default {
     components: {
         'lower-section': LowerSection,
         'exit-block': ExitBlock,
-        'flag-select' : FlagSelect
+        'flag-phone' : FlagPhone
     },
     data: function () {
         return {

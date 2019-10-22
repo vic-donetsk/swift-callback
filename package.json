@@ -22,6 +22,7 @@
     "dependencies": {
         "include-media": "^1.4.9",
         "vue": "^2.6.10",
+        "vue-masked-input": "^0.5.2",
         "vue-select-image": "^1.7.0"
     }
 }

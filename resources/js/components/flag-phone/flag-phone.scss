@@ -1,13 +1,26 @@
 @import '@/app';
 
-input {
-  display: none;
+.swift-widget_flagPhone {
+  @extend %swift-widget-input;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 4.75vh;
+  margin: 1.9vh auto 1.3vh;
+  //padding: 1px;
+
+  @include media('m-only') {
+    width: 80% !important;
+    height: 8vh;
+    margin: 4vh auto 2.4vh;
+    font-size: 2.46vh;
+  }
 }
 
-.swift-widget_flagSelect {
+.swift-widget_flagPhone-select {
   display: flex;
   width: 65px;
-  height: 8vh;
+  height: calc(8vh - 2px);
   background: #fff;
   position: relative;
 
@@ -16,14 +29,18 @@ input {
     background: white;
     position: absolute;
     right: 8px;
-    top: 12px;
+    top: 11px;
     z-index: 2;
     cursor: pointer;
   }
 
+  input {
+    display: none;
+  }
+
   .items {
     display: block;
-    min-height: 8vh;
+    min-height: calc(8vh - 2px);
     position: absolute;
     overflow: hidden;
     width: 65px;
@@ -31,13 +48,13 @@ input {
   }
 
   #select:not(:checked) ~ .items {
-    height: 8vh;
+    height: calc(8vh - 2px);
   }
 
   .items label {
     display: none;
     width: 65px;
-    height: 8vh;
+    height: calc(8vh - 2px);
     padding-left: 15px;
     background: white;
   }
@@ -60,7 +77,7 @@ input {
     display: flex;
     align-items: center;
     width: 65px;
-    height: 8vh;
+    height: calc(8vh - 2px);
   }
 
   .items input:checked + label {
@@ -74,8 +91,19 @@ input {
     display: flex;
     align-items: center;
     width: 65px;
-    height: 8vh;
     padding-left: 15px;
   }
 
+}
+
+.swift-widget_flagPhone-input {
+  @include swift_placeholder(300, #8D9CB7);
+  height: calc(8vh - 2px);
+  padding: 1% 0 0 7px;
+  border: none;
+  outline: none;
+  font-family: Axiforma, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: $mainDarkBlue;
 }
