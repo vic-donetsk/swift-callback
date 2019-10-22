@@ -55,8 +55,24 @@ const LayoutComponent = Vue.extend(WidgetComponent);
 const vm = new LayoutComponent();
 
 
-axios.get('./lang/en.json').then((request) => {
-    window.swiftCallbackTranslations  = request.data;
-    vm.$mount('#swift-widget');
+var script_link = document.getElementsByTagName('script')[0].src;
+var url = new URL(script_link);
+var key = url.searchParams.get("key");
+var lang = url.searchParams.get("lang");
+lang = (lang)?lang:'en';
+
+console.log([key,lang]);
+
+const options = {
+    headers: {'Content-Type': 'application/x-www-form-urlencoded'},json:true
+};
+axios.post('https://swift.mdhtcdn.net/api/init/', {lang:lang, key:key},options).then((request) => {
+    if (request.data.status != 'ok') {
+        console.error(request.data.error[0]);
+        return false;
+    }
+     window.swiftCallbackTranslations  = request.data.lang;
+     window.swiftCallbackSocial = request.data.social;
+     vm.$mount('#swift-widget');
 });
 

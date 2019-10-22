@@ -11,6 +11,8 @@ export default {
     },
     methods: {
         startMessenger() {
+            if (swiftCallbackSocial.facebook)
+                return  window.open(swiftCallbackSocial.facebook, '_blank');
             // TODO: integrate Messenger API
         }
     }

@@ -1,6 +1,5 @@
 import LowerSection from './../../components/lower-section/lower-section.vue';
 import ExitBlock from './../../components/exit-block/exit-block.vue';
-
 export default {
     components: {
         'lower-section': LowerSection,
@@ -14,6 +13,8 @@ export default {
             SwiftWidgetEventBus.$emit('go', 'page-rating');
         },
         startTelegram() {
+            if (swiftCallbackSocial.telegram)
+                return  window.open(swiftCallbackSocial.telegram, '_blank');
             // TODO: integrate Telegram API
         }
     }
