@@ -4,9 +4,14 @@
   display: flex;
   justify-content: flex-end;
   align-items: baseline;
+  width: fit-content;
+  margin-left: auto;
+
+  padding-right: 3.5vh;
   color: #c5daf7;
   text-align: right;
-  padding-right: 3.5vh;
+  cursor: pointer;
+
   @include media('m-only') {
     padding-right: 23px;
   }
@@ -14,7 +19,6 @@
   &-text {
     font-size: 1.7vh;
     font-weight: 400;
-    cursor: pointer;
 
     @include media('m-only') {
       display: none;
@@ -25,7 +29,6 @@
     width: 1.5vh;
     height: 1.5vh;
     margin-left: 1.2vh;
-    cursor: pointer;
 
     @include media('m-only') {
       width: 22px;

@@ -5,7 +5,6 @@
     bottom:   50px;
     right:    50px;
 
-
     cursor:   pointer;
     z-index:  10;
 
@@ -22,7 +21,6 @@
         animation-duration:        2.5s;
         animation-timing-function: ease-in-out;
         animation-iteration-count: infinite;
-
     }
 
     // main circle with phone
@@ -48,6 +46,7 @@
             opacity:    1;
         }
     }
+
     // around circles
     #swift-widget-button_circle-2 {
         background-color: #32569a;
@@ -55,7 +54,6 @@
         z-index:          4;
 
         animation-name:   animation_circle-2;
-
     }
 
     #swift-widget-button_circle-3 {
@@ -65,9 +63,7 @@
 
         animation-name:   animation_circle-3;
         animation-delay: 0.15s;
-
     }
-
 
     #swift-widget-button_circle-4 {
         background-color: #9fb3d8;
@@ -76,7 +72,6 @@
 
         animation-name:   animation_circle-4;
         animation-delay: 0.30s;
-
     }
 
     #swift-widget-button_circle-5 {
@@ -86,7 +81,6 @@
 
         animation-name:   animation_circle-5;
         animation-delay: 0.45s;
-
     }
 }
 
@@ -95,7 +89,6 @@
         transform: scale(1.25);
     }
     50% {
-
         transform: scale(1.5);
     }
 }
@@ -104,7 +97,6 @@
         transform: scale(1.5);
     }
     50% {
-
         transform: scale(1.8);
     }
 }
@@ -113,7 +105,6 @@
         transform: scale(1.75);
     }
     50% {
-
         transform: scale(2.1);
     }
 }
@@ -122,7 +113,6 @@
         transform: scale(2);
     }
     50% {
-
         transform: scale(2.4);
     }
 }

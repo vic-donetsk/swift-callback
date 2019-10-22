@@ -1,7 +1,7 @@
 <template>
-    <div class="swift-widget_exit">
-        <span class="swift-widget_exit-text" @click="exit">{{ __("Close") }}</span>
-        <svg class="swift-widget_exit-cross" @click="exit" xmlns="http://www.w3.org/2000/svg" width="14.483"
+    <div class="swift-widget_exit" @click="exit">
+        <span class="swift-widget_exit-text">{{ __("Close") }}</span>
+        <svg class="swift-widget_exit-cross" xmlns="http://www.w3.org/2000/svg" width="14.483"
              height="14.483"
              viewBox="0 0 14.483 14.483">
             <path id="Path_663" data-name="Path 663"
