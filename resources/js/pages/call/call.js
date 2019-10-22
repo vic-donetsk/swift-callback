@@ -23,11 +23,15 @@ export default {
     },
     methods: {
         chooseTime() {
-            // TODO: when flagPhoneInput is empty, call
-            // SwiftWidgetEventBus.$emit('go', 'page-chooseTimeNonumber');
-            // else
 
-            SwiftWidgetEventBus.$emit('go', 'page-chooseTime');
+            if (this.phoneNumber.length && this.phoneNumber.indexOf('*') == -1) {
+                // client enter correct phone number
+                SwiftWidgetEventBus.$emit('go', 'page-chooseTime');
+                // TODO: handle this.phoneNumber, contained client phone number
+            } else {
+                // phone number is absent or incorrect
+                SwiftWidgetEventBus.$emit('go', 'page-chooseTimeNonumber');
+            }
 
         },
 

@@ -7,7 +7,7 @@ export default {
     components: {
         'lower-section': LowerSection,
         'exit-block': ExitBlock,
-        'flag-phone' : FlagPhone
+        'flag-phone': FlagPhone
     },
     data: function () {
         return {
@@ -19,7 +19,8 @@ export default {
             week: ['duminică', 'luni', 'marți', 'miercuri', 'joi', 'vineri', 'sâmbătă'],
             times: ['9:00', '9:30', '10:00', '10:30', '11:00', '11:30', '12:00', '12:30', '13:00', '13:30', '14:00', '14:30',
                 '15:00', '15:30', '16:00', '16:30', '17:00', '17:30'],
-            months: ['ianuarie', 'februarie', 'martie', 'aprilie', 'mai', 'iunie', 'iulie', 'august', 'septembrie', 'octombrie', 'noiembrie', 'decembrie']
+            months: ['ianuarie', 'februarie', 'martie', 'aprilie', 'mai', 'iunie', 'iulie', 'august', 'septembrie', 'octombrie', 'noiembrie', 'decembrie'],
+            phoneNumber: "",
         }
     },
     created() {
@@ -28,11 +29,13 @@ export default {
     },
     methods: {
         back() {
-          this.status = 1;
+            this.status = 1;
         },
 
         select() {
-            if (this.status === 1) {
+            if (this.status === 1 && this.phoneNumber.length && this.phoneNumber.indexOf('*') == -1) {
+                // client enter correct phone number
+
                 this.status = 2;
 
                 let currentDate = new Date();
@@ -44,8 +47,15 @@ export default {
                 }
                 this.approvedDate = this.selectedDay + ' (' + currentDate.getDate() + '\u00A0' + this.months[currentDate.getMonth()] + ') ';
                 this.approvedTime = this.selectedTime;
+                // TODO: handle this.phoneNumber  =  contained client phone number
+                //              this.approvedDate =  date of expected call
+                //              this.approvedTime =  time of expected call
+
             }
         },
+        updatePhone(value) {
+            this.phoneNumber = value;
+        }
 
 
     },

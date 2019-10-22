@@ -21,7 +21,7 @@
                     </div>
                 </div>
 
-                <flag-phone></flag-phone>
+                <flag-phone @updatePhone="updatePhone"></flag-phone>
 
                 <div class="swift-widget_button button mod-blue" @click="select">
                     {{ __("I'm waiting for a call") }}
