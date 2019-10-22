@@ -22,7 +22,9 @@ export default {
         },
         getPhone() {
             console.log(this.clientPhone);
+        },
+        updatePhone (number) {
+            this.$emit('updatePhone', number);
         }
-
     }
 }

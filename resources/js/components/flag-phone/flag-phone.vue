@@ -16,6 +16,7 @@
                       :mask="currentMask"
                       :placeholder='__("Leave a number")'
                       placeholder-char="*"
+                      @input="updatePhone"
         />
     </div>
 </template>

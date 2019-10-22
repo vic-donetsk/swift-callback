@@ -15,6 +15,7 @@ export default {
             initialTime: 2799,
             shownTime: '00:27:99',
             stopTimer: null,
+            phoneNumber: "",
         }
     },
     destroyed() {
@@ -72,6 +73,9 @@ export default {
 
         timeEnd() {
             // TODO: 28 sec are over. What do you want to do after?
+        },
+        updatePhone (value) {
+            this.phoneNumber = value;
         }
     },
  }
