@@ -65,9 +65,10 @@
 
     @include media('m-only') {
       width: 80%;
-      height: 8vh;
+      height: 45px;
       padding-top: 0.4vh;
-      font-size: 2.46vh;
+      font-size: 14px;
+      font-weight: 600;
     }
   }
 
