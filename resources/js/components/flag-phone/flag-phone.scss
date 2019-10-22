@@ -11,7 +11,7 @@
 
   @include media('m-only') {
     width: 80% !important;
-    height: 8vh;
+    height: 45px;
     margin: 4vh auto 2.4vh;
     font-size: 2.46vh;
   }
@@ -20,18 +20,27 @@
 .swift-widget_flagPhone-select {
   display: flex;
   width: 65px;
-  height: calc(8vh - 2px);
+  height: calc(4.75vh - 2px);
   background: #fff;
   position: relative;
+
+  @include media('m-only') {
+    height: 43px;
+  }
+
 
   &::before {
     content: url('/img/angle-down.svg');
     background: white;
     position: absolute;
     right: 8px;
-    top: 11px;
+    top: 1px;
     z-index: 2;
     cursor: pointer;
+
+    @include media('m-only') {
+      top: 8px;
+    }
   }
 
   input {
@@ -40,23 +49,34 @@
 
   .items {
     display: block;
-    min-height: calc(8vh - 2px);
+    min-height: calc(4.75vh - 2px);
     position: absolute;
     overflow: hidden;
     width: 65px;
     cursor: pointer;
+
+    @include media('m-only') {
+      min-height: 43px;
+    }
   }
 
   #select:not(:checked) ~ .items {
-    height: calc(8vh - 2px);
+    height: calc(4.75vh - 2px);
+
+    @include media('m-only') {
+      height: 43px;
+    }
   }
 
   .items label {
     display: none;
     width: 65px;
-    height: calc(8vh - 2px);
+    height: calc(4.75vh - 2px);
     padding-left: 15px;
     background: white;
+    @include media('m-only') {
+      height: 43px;
+    }
   }
 
   .items label img {
@@ -70,14 +90,21 @@
   }
 
   #select:checked ~ .items {
-    padding-top: 8vh;
+    padding-top: 4.75vh;
+
+    @include media('m-only') {
+      height: 45px;
+    }
   }
 
   #select:checked ~ .items label {
     display: flex;
     align-items: center;
     width: 65px;
-    height: calc(8vh - 2px);
+    height: calc(4.75vh - 2px);
+    @include media('m-only') {
+      height: 43px;
+    }
   }
 
   .items input:checked + label {
@@ -98,12 +125,18 @@
 
 .swift-widget_flagPhone-input {
   @include swift_placeholder(300, #8D9CB7);
-  height: calc(8vh - 2px);
-  padding: 1% 0 0 7px;
+  height: calc(4.75vh - 2px);
+  padding: 1.5% 0 0 7px;
   border: none;
   outline: none;
   font-family: Axiforma, sans-serif;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 13px;
   color: $mainDarkBlue;
+
+  @include media('m-only') {
+    height: 43px;
+    padding: 1% 0 0 7px;
+    font-size: 16px;
+  }
 }
