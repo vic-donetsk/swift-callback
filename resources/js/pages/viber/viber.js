@@ -15,6 +15,8 @@ export default {
         },
         startViber() {
             // TODO: integrate Viber API
+            if (swiftCallbackSocial.viber)
+                return  window.open(swiftCallbackSocial.viber, '_blank');
         }
     }
 

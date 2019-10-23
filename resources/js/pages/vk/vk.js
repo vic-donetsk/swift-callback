@@ -14,6 +14,8 @@ export default {
             SwiftWidgetEventBus.$emit('go', 'page-rating');
         },
         startVK() {
+            if (swiftCallbackSocial.vkontakte)
+                return  window.open(swiftCallbackSocial.vkontakte, '_blank');
             // TODO: integrate VK API
         }
     }
