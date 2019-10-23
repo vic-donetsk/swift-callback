@@ -35,6 +35,11 @@ export default {
         exit() {
             SwiftWidgetEventBus.$emit('go', 'page-rating');
         },
+        handleEnter(event) {
+            if (event.keyCode === 13) {
+                this.send();
+            }
+        },
         send() {
             // creation new client message in chat
             let date = new Date();

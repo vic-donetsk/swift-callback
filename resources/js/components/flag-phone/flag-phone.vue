@@ -24,20 +24,20 @@
                 <div style="display: flex; align-items: center;">
                     <img src="/img/moldova.svg" class="country-flag">
 <!--                    :src="getFlag(timezone.countryCode)"-->
-                    <div>
-                        {{ timezone.offset }}
-                        <b>{{ timezone.name }}</b>
-                    </div>
+<!--                    <div>-->
+<!--                        {{ timezone.offset }}-->
+<!--                        <b>{{ timezone.name }}</b>-->
+<!--                    </div>-->
                 </div>
             </template>
             <!-- slot for the selected item (in the text field) -->
             <template slot="selection" slot-scope="{ item: timezone }">
                 <img src="/img/moldova.svg" class="country-flag">
 
-                <div>
-                    {{ timezone.offset }}
-                    <b>{{ timezone.name }}</b>
-                </div>
+<!--                <div>-->
+<!--                    {{ timezone.offset }}-->
+<!--                    <b>{{ timezone.name }}</b>-->
+<!--                </div>-->
             </template>
         </cool-select>
 
