@@ -1,0 +1,94 @@
+{
+  "data": [
+    {
+      "name": "Africa/Conakry",
+      "countryCode": "GIN",
+      "offset": "(UTC+00:00)",
+      "offsetPrefix": "+"
+    },
+    {
+      "name": "Africa/Lome",
+      "countryCode": "TGO",
+      "offset": "(UTC+00:00)",
+      "offsetPrefix": "+"
+    },
+    {
+      "name": "Atlantic/Reykjavik",
+      "countryCode": "ISL",
+      "offset": "(UTC+00:00)",
+      "offsetPrefix": "+"
+    },
+    {
+      "name": "Africa/Monrovia",
+      "countryCode": "LBR",
+      "offset": "(UTC+00:00)",
+      "offsetPrefix": "+"
+    },
+    {
+      "name": "America/Scoresbysund",
+      "countryCode": "GRL",
+      "offset": "(UTC+00:00)",
+      "offsetPrefix": "+"
+    },
+    {
+      "name": "America/Danmarkshavn",
+      "countryCode": "GRL",
+      "offset": "(UTC+00:00)",
+      "offsetPrefix": "+"
+    },
+    {
+      "name": "Africa/Bissau",
+      "countryCode": "GNB",
+      "offset": "(UTC+00:00)",
+      "offsetPrefix": "+"
+    },
+    {
+      "name": "Africa/Banjul",
+      "countryCode": "GMB",
+      "offset": "(UTC+00:00)",
+      "offsetPrefix": "+"
+    },
+    {
+      "name": "Africa/Bamako",
+      "countryCode": "MLI",
+      "offset": "(UTC+00:00)",
+      "offsetPrefix": "+"
+    },
+    {
+      "name": "Africa/Dakar",
+      "countryCode": "SEN",
+      "offset": "(UTC+00:00)",
+      "offsetPrefix": "+"
+    },
+    {
+      "name": "Africa/Ouagadougou",
+      "countryCode": "BFA",
+      "offset": "(UTC+00:00)",
+      "offsetPrefix": "+"
+    },
+    {
+      "name": "Africa/Accra",
+      "countryCode": "GHA",
+      "offset": "(UTC+00:00)",
+      "offsetPrefix": "+"
+    },
+    {
+      "name": "Africa/Freetown",
+      "countryCode": "SLE",
+      "offset": "(UTC+00:00)",
+      "offsetPrefix": "+"
+    },
+    {
+      "name": "Africa/Sao_Tome",
+      "countryCode": "STP",
+      "offset": "(UTC+00:00)",
+      "offsetPrefix": "+"
+    },
+    {
+      "name": "Atlantic/Azores",
+      "countryCode": "PRT",
+      "offset": "(UTC+00:00)",
+      "offsetPrefix": "+"
+    }
+  ]
+}

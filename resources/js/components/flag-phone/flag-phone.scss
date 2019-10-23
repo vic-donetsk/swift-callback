@@ -7,7 +7,6 @@
   align-items: center;
   height: 4.75vh;
   margin: 1.9vh auto 1.3vh;
-  //padding: 1px;
 
   @include media('m-only') {
     width: 80% !important;
@@ -20,12 +19,16 @@
 .swift-widget_flagPhone-select {
   display: flex;
   width: 65px;
-  height: calc(4.75vh - 2px);
+  height: 4.75vh;
+  border-top: 1px solid #E3ECF5;
+  border-bottom: 1px solid #E3ECF5;
+  border-left: 1px solid #E3ECF5;
+  border-radius: 8px 0 0 8px;
   background: #fff;
   position: relative;
 
   @include media('m-only') {
-    height: 43px;
+    height: 45px;
   }
 
 
@@ -49,34 +52,38 @@
 
   .items {
     display: block;
-    min-height: calc(4.75vh - 2px);
+    //min-height: 4.75vh - 2px;
     position: absolute;
     overflow: hidden;
+    border-top: 1px solid #E3ECF5;
+    border-bottom: 1px solid #E3ECF5;
+    border-left: 1px solid #E3ECF5;
+    border-radius: 8px 0 0 8px;
     width: 65px;
     cursor: pointer;
 
     @include media('m-only') {
-      min-height: 43px;
+      //min-height: 45px;
       overflow: visible;
     }
   }
 
   #select:not(:checked) ~ .items {
-    height: calc(4.75vh - 2px);
+    height: 4.75vh;
 
     @include media('m-only') {
-      height: 43px;
+      height: 45px;
     }
   }
 
   .items label {
     display: none;
     width: 65px;
-    height: calc(4.75vh - 2px);
+    height: 4.75vh;
     padding-left: 15px;
     background: white;
     @include media('m-only') {
-      height: 43px;
+      height: 45px;
     }
   }
 
@@ -102,9 +109,9 @@
     display: flex;
     align-items: center;
     width: 65px;
-    height: calc(4.75vh - 2px);
+    height: 4.75vh;
     @include media('m-only') {
-      height: 43px;
+      height: 45px;
     }
   }
 
@@ -126,9 +133,14 @@
 
 .swift-widget_flagPhone-input {
   @include swift_placeholder(300, #8D9CB7);
-  height: calc(4.75vh - 2px);
+  height: 4.75vh;
   padding: 1.5% 0 0 7px;
-  border: none;
+  border-left: none;
+  border-top: 1px solid #E3ECF5;
+  border-right: 1px solid #E3ECF5;
+  border-bottom: 1px solid #E3ECF5;
+  border-radius: 0 8px 8px 0;
+  width: 100%;
   outline: none;
   font-family: Axiforma, sans-serif;
   font-weight: 500;
@@ -136,7 +148,7 @@
   color: $mainDarkBlue;
 
   @include media('m-only') {
-    height: 43px;
+    height: 45px;
     padding: 1% 0 0 7px;
     font-size: 16px;
   }
