@@ -20,6 +20,8 @@ import PageNotWorking from './pages/not-working/not-working.vue';
 import PageNoManager from './pages/no-manager/no-manager.vue';
 import PageRating from './pages/rating/rating.vue';
 
+import 'vue-cool-select/dist/themes/bootstrap.css';
+
 
 window._ = require('lodash');
 

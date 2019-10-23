@@ -1,8 +1,13 @@
 import MaskedInput from 'vue-masked-input';
 
+import { CoolSelect } from "vue-cool-select";
+import countries from './countries';
+
+
 export default {
     components: {
-        'masked-input': MaskedInput
+        'masked-input': MaskedInput,
+        CoolSelect,
     },
     data: function () {
         return {
@@ -14,6 +19,9 @@ export default {
                 {id: 2, img: '', mask: "\\+\\3\\8 (111) 111-11-11"},
                 {id: 3, img: '', mask: "\\+\\7 (111) 111-1111"}
             ],
+
+            selectedTimezone: "Africa/Lome",
+            items: countries.data
         }
     },
     methods: {
