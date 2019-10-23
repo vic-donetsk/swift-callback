@@ -16,125 +16,10 @@
   }
 }
 
-.swift-widget_flagPhone-select {
-  display: flex;
-  width: 65px;
-  height: 4.75vh;
-  border-top: 1px solid #E3ECF5;
-  border-bottom: 1px solid #E3ECF5;
-  border-left: 1px solid #E3ECF5;
-  border-radius: 8px 0 0 8px;
-  background: #fff;
-  position: relative;
-
-  @include media('m-only') {
-    height: 45px;
-  }
-
-
-  &::before {
-    content: url('/img/angle-down.svg');
-    background: white;
-    position: absolute;
-    right: 8px;
-    top: 1px;
-    z-index: 2;
-    cursor: pointer;
-
-    @include media('m-only') {
-      top: 8px;
-    }
-  }
-
-  input {
-    display: none;
-  }
-
-  .items {
-    display: block;
-    //min-height: 4.75vh - 2px;
-    position: absolute;
-    overflow: hidden;
-    border-top: 1px solid #E3ECF5;
-    border-bottom: 1px solid #E3ECF5;
-    border-left: 1px solid #E3ECF5;
-    border-radius: 8px 0 0 8px;
-    width: 65px;
-    cursor: pointer;
-
-    @include media('m-only') {
-      //min-height: 45px;
-      overflow: visible;
-    }
-  }
-
-  #select:not(:checked) ~ .items {
-    height: 4.75vh;
-
-    @include media('m-only') {
-      height: 45px;
-    }
-  }
-
-  .items label {
-    display: none;
-    width: 65px;
-    height: 4.75vh;
-    padding-left: 15px;
-    background: white;
-    @include media('m-only') {
-      height: 45px;
-    }
-  }
-
-  .items label img {
-    width: 24px;
-    height: 16px;
-  }
-
-  .items label:hover {
-    background: #eee;
-    cursor: pointer;
-  }
-
-  #select:checked ~ .items {
-    padding-top: 4.75vh;
-
-    @include media('m-only') {
-      height: 45px;
-    }
-  }
-
-  #select:checked ~ .items label {
-    display: flex;
-    align-items: center;
-    width: 65px;
-    height: 4.75vh;
-    @include media('m-only') {
-      height: 45px;
-    }
-  }
-
-  .items input:checked + label {
-    display: flex; /*!important;*/
-    align-items: center;
-    border: none;
-    background: white;
-  }
-
-  .bg {
-    display: flex;
-    align-items: center;
-    width: 65px;
-    padding-left: 15px;
-  }
-
-}
-
 .swift-widget_flagPhone-input {
   @include swift_placeholder(300, #8D9CB7);
   height: 4.75vh;
-  padding: 1.5% 0 0 7px;
+  padding-top: 1.5%;
   border-left: none;
   border-top: 1px solid #E3ECF5;
   border-right: 1px solid #E3ECF5;
@@ -149,13 +34,16 @@
 
   @include media('m-only') {
     height: 45px;
-    padding: 1% 0 0 7px;
+    padding-top: 1%;
     font-size: 16px;
   }
 }
-
+.IZ-select__input {
+  border: none !important;
+  outline: none;
+}
 .country-flag {
-  max-width: 30px;
-  margin-right: 10px;
-  border: 1px solid #eaecf0;
+  width: 24px;
+  height: 16px;
+  margin-right: 30px;
 }

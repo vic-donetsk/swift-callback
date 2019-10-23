@@ -53,6 +53,7 @@
 
 <style lang='scss' scoped>
     @import 'flag-phone';
+    @import 'bootstrap.css';
 </style>
 
 <script src="./flag-phone.js"></script>
