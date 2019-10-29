@@ -92,7 +92,7 @@
     border-top: 4px solid #3C6388;
     background: white;
     position: absolute;
-    left: 50px;
+    left: 45px;
     top: 1vh;
     z-index: 2;
     cursor: pointer;
@@ -226,7 +226,7 @@
 }
 
 .IZ-select__menu .IZ-select__menu-items {
-    width: 80px;
+    width: 70px;
     overflow-y: auto;
     overflow-x: hidden
 }
