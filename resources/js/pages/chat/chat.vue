@@ -42,11 +42,10 @@
 
                 </div>
                 <div class="swift-widget_chat-newMessage">
-                    <textarea class="chat-newMessage_text"
+                    <input class="chat-newMessage_text"
                               placeholder="Scrie un mesaj…"
                               v-model="currentMessage"
                               @keyup="handleEnter">
-                    </textarea>
                     <img src="/img/send_button.svg" class="chat-newMessage_send" @click="send" alt="send">
                 </div>
 
