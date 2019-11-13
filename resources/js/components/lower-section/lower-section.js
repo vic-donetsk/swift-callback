@@ -7,11 +7,15 @@ export default {
     data: function () {
         return {
             activePage: '',
-            mobileState: ''
+            mobileState: '',
+            isMobile: false
         }
     },
     props: ['active'],
     created() {
+        if (document.documentElement.clientWidth < 600) {
+            this.isMobile = true;
+        }
         this.activeChange();
     },
     methods: {
