@@ -35,8 +35,8 @@
 </template>
 
 <style lang='scss' scoped>
-    @import 'flag-phone';
     @import 'bootstrap.css';
+    @import 'flag-phone';
 </style>
 
 <script src="./flag-phone.js"></script>

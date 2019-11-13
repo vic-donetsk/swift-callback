@@ -26,7 +26,7 @@
       max-height: 947px;
       height: 80vh;
       width: calc(0.636 * 80vh);
-      padding: 1.5vh 0 2.7vh;
+      padding: 3vh 0 2.7vh;
     }
 
   }
@@ -38,7 +38,7 @@
   &_img {
     width: 52%;
     @include media('m-only') {
-      margin-top: -15px;
+      margin-top: -22px;
       width: 180px;
       height: 154px;
     }
@@ -46,11 +46,12 @@
   }
 
   &_text {
-    line-height: 3.6vh;
+    line-height: 1.2;
     font-size: 2.55vh;
     font-weight: 500;
     color: $mainDarkBlue;
     @include media('m-only') {
+      font-size: 15px;
       margin-left: 7.5%;
       margin-right: 7.5%;
     }
@@ -58,10 +59,11 @@
 
   &_button {
     width: 68%;
-    height: 4.75vh;
+    height: 4vh;
     margin: 0 auto;
     padding-top: 0.6vh;
-    font-size: 1.9vh;
+    font-size: 1.7vh;
+    font-weight: 300;
 
     @include media('m-only') {
       width: 80%;

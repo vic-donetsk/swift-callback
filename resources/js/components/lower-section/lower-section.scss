@@ -9,6 +9,11 @@
       .links_icon[id="call"] {
         fill: $mainDarkBlue;
       }
+
+      padding-bottom: 0.5vh;
+      @include media('m-only') {
+        padding-bottom: 0;
+      }
     }
 
     &.chatPage {
@@ -77,7 +82,7 @@
   &_links-mobile {
     display: flex;
     justify-content: space-between;
-    margin: 0 10% 2.8vh;
+    margin: 0 12% 2.8vh;
     padding: 1.9vh 0;
     border-top: 1px solid #EBF5FD;
     border-bottom: 1px solid #EBF5FD;
@@ -96,8 +101,12 @@
   }
 
   .swift-widget_created-by {
-    font-size: 1.6vh;
+    font-size: 1.1vh;
     font-weight: 600;
     color: #C5DAF7;
+
+    @include media('m-only') {
+      font-size: 10px;
+    }
   }
 }

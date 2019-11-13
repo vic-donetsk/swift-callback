@@ -4,14 +4,16 @@
 .swift-widget {
 
   &_text {
-    margin: 2.2vh 5% 0;
-
+    margin: 3.5vh 4% 0;
+    @include media('m-only') {
+      margin: 12px 5% 0;
+    }
   }
 
   &_staticTimer {
-    margin-top: 1.3vh;
-    font-size: 5.2vh;
-    line-height: 5.2vh;
+    margin-top: 1.1vh;
+    font-size: 4vh;
+    line-height: 1;
     font-weight: 100;
     color: $mainDarkBlue;
 
@@ -29,13 +31,18 @@
   }
 
 
-
   &_callMode-agree {
     width: 69%;
     margin: 1.3vh auto 0;
-    font-size: 1.1vh;
+    font-size: 0.9vh;
     font-weight: 300;
     color: #B5C0D1;
+    @include media('m-only') {
+      width: 100%;
+      margin: 15px auto 0;
+      line-height: 1.4;
+      font-size: 8px;
+    }
   }
 
   &_callMode-link {
@@ -46,15 +53,25 @@
   &_callback {
     display: flex;
     justify-content: center;
-    margin: 2.1vh auto;
-    font-size: 1.5vh;
+    margin: 2.2vh auto 2.1vh;
+    font-size: 1.4vh;
     font-weight: 600;
     color: #0E357C;
     cursor: pointer;
+    @include media('m-only') {
+      margin: 20px auto 0;
+      font-size: 13px;
+    }
   }
 
   &_clock {
-    height: 1.8vh;
+    height: 1.6vh;
+    margin-top: 0.3vh;
     margin-right: 0.5%;
+    @include media('m-only') {
+      height: 14px;
+      margin-right: 7px;
+      margin-top: 0;
+    }
   }
 }

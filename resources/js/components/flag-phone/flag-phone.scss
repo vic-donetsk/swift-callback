@@ -5,21 +5,21 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  height: 4.75vh;
+  height: 3.5vh;
   margin: 1.9vh auto 1.3vh;
   border-right: none;
 
   @include media('m-only') {
     width: 80% !important;
     height: 45px;
-    margin: 4vh auto 2.4vh;
+    margin: 20px auto 2.4vh;
     font-size: 2.46vh;
   }
 }
 
 .swift-widget_flagPhone-input {
   @include swift_placeholder(300, #8D9CB7);
-  height: 4.75vh;
+  height: 3.5vh;
   padding-top: 1.5%;
   border-left: none;
   border-top: 1px solid #E3ECF5;
@@ -30,13 +30,12 @@
   outline: none;
   font-family: Axiforma, sans-serif;
   font-weight: 500;
-  font-size: 13px;
+  font-size: 1.2vh;
   color: $mainDarkBlue;
 
   @include media('m-only') {
     height: 45px;
     padding-top: 1%;
-    font-size: 16px;
   }
 }
 
@@ -46,9 +45,15 @@
 }
 
 .country-flag {
-  max-width: 24px;
+  max-width: 2.2vh;
   width: 100%;
-  //width: 24px;
-  height: 16px;
-  margin-right: 35px;
+  height: 2vh;
+  margin-right: 48px;
+  @include media('m-only') {
+    max-width: 24px;
+    width: 100%;
+    height: 20px;
+    margin-right: 35px;
+  }
 }
+

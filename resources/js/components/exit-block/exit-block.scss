@@ -7,7 +7,7 @@
   width: fit-content;
   margin-left: auto;
 
-  padding-right: 3.5vh;
+  padding-right: 2vh;
   color: #c5daf7;
   text-align: right;
   cursor: pointer;
@@ -17,7 +17,7 @@
   }
 
   &-text {
-    font-size: 1.7vh;
+    font-size: 1.3vh;
     font-weight: 400;
 
     @include media('m-only') {
@@ -26,8 +26,8 @@
   }
 
   &-cross {
-    width: 1.5vh;
-    height: 1.5vh;
+    width: 1.2vh;
+    height: 1.2vh;
     margin-left: 1.2vh;
 
     @include media('m-only') {
