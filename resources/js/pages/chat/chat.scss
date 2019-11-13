@@ -3,8 +3,9 @@
 .swift-widget {
 
   &_block {
-      @include media('m-only') {
+    @include media('m-only') {
       padding-top: 0;
+      padding-bottom: 0;
     }
   }
 
@@ -17,6 +18,7 @@
   &_chat-header {
     @extend %blueGradient;
     display: flex;
+    flex-shrink: 0;
     justify-content: space-between;
     align-items: center;
     height: 10.8%;
@@ -25,6 +27,9 @@
 
     @include media ('m-only') {
       height: 69px;
+      padding-left: 23px;
+      padding-right: 21px;
+      border-radius: 0;
     }
   }
 
@@ -38,6 +43,10 @@
 
       img {
         width: 5.7vh;
+
+        @include media ('m-only') {
+          width: 41px;
+        }
       }
     }
   }
@@ -48,27 +57,45 @@
     flex-direction: column;
     color: $white;
 
+    @include media ('m-only') {
+      align-items: flex-start;
+    }
+
     .person_company {
       font-size: 2.1vh;
       font-weight: 600;
       line-height: 1;
+      @include media ('m-only') {
+        line-height: 20px;
+        font-size: 14px;
+      }
     }
 
     .person_position {
       font-size: 1.7vh;
       font-weight: 300;
       line-height: 1;
+      @include media ('m-only') {
+        font-size: 12px;
+      }
     }
   }
 
   &_close {
     display: flex;
+
   }
 
   &_cross {
     width: 1.5vh;
     height: 1.5vh;
     margin-left: 1.2vh;
+    stroke: #c5daf7;
+
+    @include media ('m-only') {
+      width: 21px;
+      height: 20px;
+    }
   }
 
   &_chat-dialog {
@@ -77,12 +104,21 @@
     margin: 0 auto;
     padding: 5vh 0;
     overflow: hidden;
+    @include media ('m-only') {
+      width: 100%;
+      padding: 26px 17px;
+    }
+
   }
 
   &_chat-message {
     display: flex;
     align-items: flex-start;
     margin-bottom: 3vh;
+
+    @include media ('m-only') {
+      margin-bottom: 20px;
+    }
 
     &.mod_manager-message {
       justify-content: flex-start;
@@ -95,6 +131,19 @@
 
   &_chat-avatar {
     width: 6.8vh;
+
+    @include media ('m-only') {
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+    }
+
+    .avatar_icon {
+      width: 100%;
+      height: 100%;
+      fill: #4c638f;
+      stroke: #707070;
+    }
   }
 
   &_message-block {
@@ -102,7 +151,10 @@
     border-radius: 1.6vh;
     font-size: 1.6vh;
 
-
+    @include media ('m-only') {
+      font-size: 14px;
+      border-radius: 15px;
+    }
 
     &.mod_manager {
       background: $white;
@@ -112,7 +164,6 @@
 
       @include media('m-only') {
         padding: 4px 26px 4px 10px;
-        font-size: 14px;
       }
     }
 
@@ -123,8 +174,7 @@
       text-align: right;
 
       @include media('m-only') {
-        padding: 4px 10px 4px 26px;
-        font-size: 14px;
+        padding: 4px 10px 4px 20px;
       }
     }
 
@@ -139,6 +189,10 @@
       font-weight: 300;
       font-style: italic;
       color: #88A5DB;
+
+      @include media ('m-only') {
+        font-size: 12px;
+      }
     }
   }
 
@@ -157,7 +211,10 @@
     text-align: left;
 
     @include media('m-only') {
-      margin-bottom: 11px;
+      margin-bottom: 14px;
+      height: 45px;
+      padding-top: 10px;
+      padding-left: 14px;
     }
 
 
@@ -170,12 +227,20 @@
       font-size: 1.6vh;
       font-family: Axiforma, sans-serif;
       overflow: hidden;
+
+      @include media ('m-only') {
+        font-size: 14px;
+      }
     }
 
     .chat-newMessage_send {
       margin-top: 0.5vh;
       width: 5.3%;
       cursor: pointer;
+
+      @include media ('m-only') {
+        width: 20px;
+      }
     }
   }
 

@@ -59,12 +59,12 @@ export default {
               }
 
               //case 'chat': this.activePage = 'chatPage'; break;
-              case 'messenger': this.activePage = 'messengerPage'; break;
-              case 'telegram': this.activePage = 'telegramPage'; break;
-              case 'vk': this.activePage = 'vkPage'; break;
+              //case 'messenger': this.activePage = 'messengerPage'; break;
+              //case 'telegram': this.activePage = 'telegramPage'; break;
+              //case 'vk': this.activePage = 'vkPage'; break;
               //case 'viber': this.activePage = 'viberPage'; break;
-              case 'whatsapp': this.activePage = 'whatsappPage'; break;
-              case 'mail': this.activePage = 'mailPage'; break;
+              //case 'whatsapp': this.activePage = 'whatsappPage'; break;
+              //case 'mail': this.activePage = 'mailPage'; break;
           }
         },
         toLeftMenu() {

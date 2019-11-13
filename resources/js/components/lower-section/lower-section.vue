@@ -64,7 +64,7 @@
             </svg>
         </div>
 
-        <div class="swift-widget_created-by">{{ __("Created by SwiftCallBack") }}</div>
+        <div v-if="active !== 'chat'" class="swift-widget_created-by">{{ __("Created by SwiftCallBack") }}</div>
 
         <svg-sprite></svg-sprite>
 
