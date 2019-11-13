@@ -7,6 +7,7 @@
   align-items: center;
   height: 4.75vh;
   margin: 1.9vh auto 1.3vh;
+  border-right: none;
 
   @include media('m-only') {
     width: 80% !important;

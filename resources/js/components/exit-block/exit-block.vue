@@ -1,12 +1,11 @@
 <template>
     <div class="swift-widget_exit" @click="exit">
         <span class="swift-widget_exit-text">{{ __("Close") }}</span>
-        <svg class="swift-widget_exit-cross" xmlns="http://www.w3.org/2000/svg" width="14.483"
-             height="14.483"
-             viewBox="0 0 14.483 14.483">
-            <path id="Path_663" data-name="Path 663"
-                  d="M13.994,2.854,9.605,7.243l4.388,4.389A1.671,1.671,0,1,1,11.631,14L7.241,9.607,2.852,14A1.671,1.671,0,0,1,.49,11.632L4.878,7.243.489,2.854A1.671,1.671,0,0,1,2.852.491L7.241,4.88,11.63.491a1.671,1.671,0,0,1,2.363,2.364Z"
-                  transform="translate(0.001 -0.002)" fill="#c5daf7"/>
+        <svg class="swift-widget_exit-cross" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12.065 12.776">
+            <g id="_2" data-name="2" transform="translate(-1813.348 -93.159)">
+                <line id="Line_16" data-name="Line 16" x1="9.239" y2="9.95" transform="translate(1814.761 94.572)" fill="none" stroke="#c5daf7" stroke-linecap="round" stroke-width="2"/>
+                <line id="Line_15" data-name="Line 15" x2="9.239" y2="9.95" transform="translate(1814.761 94.572)" fill="none" stroke="#c5daf7" stroke-linecap="round" stroke-width="2"/>
+            </g>
         </svg>
     </div>
 </template>
