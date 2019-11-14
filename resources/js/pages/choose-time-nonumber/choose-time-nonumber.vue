@@ -2,8 +2,27 @@
     <section class="swift-widget">
         <div class="swift-widget_block">
             <div class="swift-widget_upper-section" v-if="status == 1">
-                <exit-block page="chooseTimeNonumber"></exit-block>
-                <img class="swift-widget_img" src="img/illustration/leave-your-phone.svg" alt="SWIFT Call">
+                <div class="swift-widget_exit-double">
+                    <div class="swift-widget_exit-left">
+                        <svg class="swift-widget_arrow" @click="backTo" xmlns="http://www.w3.org/2000/svg"
+                             viewBox="0 0 20.153 10.827">
+                            <g id="înapoi" transform="translate(-1719.347 -94.087)">
+                                <line id="Line_16" data-name="Line 16" x1="17.739"
+                                      transform="translate(1720.761 99.522)" fill="none" stroke="#c5daf7"
+                                      stroke-linecap="round" stroke-width="2"/>
+                                <line id="Line_19" data-name="Line 19" x1="3.739" y2="4.022"
+                                      transform="translate(1720.761 95.5)" fill="none" stroke="#c5daf7"
+                                      stroke-linecap="round" stroke-width="2"/>
+                                <line id="Line_20" data-name="Line 20" x1="3.739" y1="3.978"
+                                      transform="translate(1720.761 99.522)" fill="none" stroke="#c5daf7"
+                                      stroke-linecap="round" stroke-width="2"/>
+                            </g>
+                        </svg>
+                        <span @click="backTo">{{ __("Back") }}</span>
+                    </div>
+                    <exit-block page="chooseTimeNonumber"></exit-block>
+                </div>
+                <img class="swift-widget_img" src="img/illustration/select-time.svg" alt="SWIFT Call">
                 <div class="swift-widget_text">
                     {{__("Choose an hour that suits you and us we call as soon as possible")}}
                 </div>

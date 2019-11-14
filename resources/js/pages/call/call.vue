@@ -5,7 +5,7 @@
                 <exit-block page="call"></exit-block>
 
                 <div v-if="firstApelWindow === true">
-                    <img class="swift-widget_img" src="img/illustration/leave-your-phone.svg" alt="SWIFT Call">
+                    <img class="swift-widget_img" src="img/illustration/call.svg" alt="SWIFT Call">
                     <div class="swift-widget_text">
                         {{__("Hi, you want us to come back with a call within 28 seconds?")}}
                     </div>

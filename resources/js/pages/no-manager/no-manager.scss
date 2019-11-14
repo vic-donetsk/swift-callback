@@ -56,10 +56,10 @@
 
   &_button-back {
     width: 68%;
-    height: 4.75vh;
+    height: 4vh;
     margin: 4vh auto;
     padding-top: 0.6vh;
-    font-size: 1.9vh;
+    font-size: 1.7vh;
 
     @include media('m-only') {
       width: 80%;

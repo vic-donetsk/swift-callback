@@ -5,7 +5,7 @@
   &_exit-double {
     display: flex;
     justify-content: space-between;
-    font-size: 1.7vh;
+    font-size: 1.3vh;
     font-weight: 400;
     color: #c5daf7;
 
@@ -20,7 +20,6 @@
 
   &_exit-left {
     display: flex;
-    align-items: baseline;
     justify-content: flex-start;
 
     @include media('m-only') {
@@ -31,7 +30,7 @@
   .swift-widget_arrow {
     width: 1.5vh;
     height: 1.5vh;
-    margin: 0 0.9vh;
+    margin: 0 0.5vh 0 0.9vh;
   }
 
 &_img-ok {
@@ -139,10 +138,10 @@
 
 &_button-back {
   width: 68%;
-  height: 4.75vh;
+  height: 4vh;
   margin: 4vh auto;
   padding-top: 0.6vh;
-  font-size: 1.9vh;
+  font-size: 1.7vh;
 
   @include media('m-only') {
     width: 80%;

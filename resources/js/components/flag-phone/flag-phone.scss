@@ -5,7 +5,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  height: 3.5vh;
+  height: 4vh;
   margin: 1.9vh auto 1.3vh;
   border-right: none;
 
@@ -19,7 +19,7 @@
 
 .swift-widget_flagPhone-input {
   @include swift_placeholder(300, #8D9CB7);
-  height: 3.5vh;
+  height: 4vh;
   padding-top: 1.5%;
   border-left: none;
   border-top: 1px solid #E3ECF5;
@@ -30,12 +30,13 @@
   outline: none;
   font-family: Axiforma, sans-serif;
   font-weight: 500;
-  font-size: 1.2vh;
+  font-size: 1.4vh;
   color: $mainDarkBlue;
 
   @include media('m-only') {
     height: 45px;
     padding-top: 1%;
+    font-size: 13px;
   }
 }
 

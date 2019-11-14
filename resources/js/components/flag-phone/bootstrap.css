@@ -99,13 +99,13 @@
     border-top: 4px solid #3C6388;
     background: white;
     position: absolute;
-    left: 40px;
+    left: 33px;
     top: calc(50% - 0.1vh);
     z-index: 2;
     cursor: pointer;
 }
 
-@media only screen and (min-device-width: 600px) {
+@media only screen and (max-device-width: 600px) {
     .IZ-select__input.IZ-select__input--selection-slot::before {
         left: 22px;
         border-left: 2px solid transparent;
