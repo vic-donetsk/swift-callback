@@ -61,6 +61,10 @@ export default {
                   this.mobileState = 2;
                   break;
               }
+              case 'noNumber': {
+                  this.mobileState = 1;
+                  break;
+              }
 
               //case 'chat': this.activePage = 'chatPage'; break;
               //case 'messenger': this.activePage = 'messengerPage'; break;

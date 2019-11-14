@@ -1,7 +1,7 @@
 <template>
     <section class="swift-widget">
         <div class="swift-widget_block">
-            <div class="swift-widget_upper-section" v-if="status == 1">
+            <div class="swift-widget_upper-section" v-if="callStatus == 1">
                 <div class="swift-widget_exit-double">
                     <div class="swift-widget_exit-left">
                         <svg class="swift-widget_arrow" @click="backTo" xmlns="http://www.w3.org/2000/svg"
@@ -52,9 +52,9 @@
                 </div>
             </div>
 
-            <lower-section v-if="status == 1"></lower-section>
+            <lower-section v-if="callStatus === 1" active="noNumber"></lower-section>
 
-            <div class="swift-widget_upper-section" v-if="status == 2">
+            <div class="swift-widget_upper-section" v-if="callStatus === 2">
                 <exit-block page="chooseTimeNonumber"></exit-block>
                 <img class="swift-widget_img-ok" src="img/illustration/ok-icon.svg" alt="SWIFT OK">
                 <div class="swift-widget_text">

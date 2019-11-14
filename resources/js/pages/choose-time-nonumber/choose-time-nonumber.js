@@ -11,7 +11,7 @@ export default {
     },
     data: function () {
         return {
-            status: 1,
+            callStatus: 1,
             selectedDay: '',
             selectedTime: '',
             approvedDate: '',
@@ -29,14 +29,13 @@ export default {
     },
     methods: {
         back() {
-            this.status = 1;
+            this.callStatus = 1;
         },
 
         select() {
-            if (this.status === 1 && this.phoneNumber.length && this.phoneNumber.indexOf('*') == -1) {
+            if (this.callStatus === 1 && this.phoneNumber.length && this.phoneNumber.indexOf('*') === -1) {
                 // client enter correct phone number
-
-                this.status = 2;
+                this.callStatus = 2;
 
                 let currentDate = new Date();
                 let interval = this.week.indexOf(this.selectedDay) - currentDate.getDay();
@@ -55,7 +54,10 @@ export default {
         },
         updatePhone(value) {
             this.phoneNumber = value;
-        }
+        },
+        backTo() {
+            SwiftWidgetEventBus.$emit('go', 'page-call');
+        },
 
 
     },

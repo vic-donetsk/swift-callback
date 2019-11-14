@@ -2,6 +2,10 @@
 
 .swift-widget {
 
+  &_block {
+    height: auto;
+  }
+
   &_exit-double {
     display: flex;
     justify-content: space-between;
@@ -41,6 +45,11 @@
   &_text {
     margin: 1.9vh 5% 0;
     font-size: 2.3vh;
+
+    @include media('m-only') {
+      margin-top: 18px;
+      font-size: 15px;
+    }
   }
 
   &_select-container {
@@ -48,12 +57,20 @@
     display: flex;
     justify-content: space-between;
     width: 68%;
+    @include media('m-only') {
+      width: 80%;
+      height: 45px;
+      margin-top: 20px;
+    }
   }
 
   &_select {
     width: 48%;
     height: 4vh;
     background: $white;
+    @include media('m-only') {
+      height: 100%;
+    }
 
     select {
       -webkit-appearance: none;
@@ -74,6 +91,11 @@
       font-size: 1.8vh;
       font-weight: 700;
       padding-left: 10px;
+
+      @include media('m-only') {
+        font-size: 13px;
+        color: $mainDarkBlue;
+      }
     }
 
     select::-ms-expand {
@@ -82,6 +104,10 @@
 
     select option {
       font-size: 1.8vh;
+      @include media('m-only') {
+        font-size: 13px;
+        color: $mainDarkBlue;
+      }
     }
   }
 
@@ -107,6 +133,13 @@
     font-size: 1.1vh;
     font-weight: 300;
     color: #B5C0D1;
+    @include media('m-only') {
+      font-size: 8px;
+      width: 80%;
+      line-height: 1.2;
+      margin-top: 15px;
+      margin-bottom: 30px;
+    }
   }
 
   &_callMode-link {
