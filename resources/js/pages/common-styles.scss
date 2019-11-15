@@ -10,6 +10,7 @@
   }
 
   &_block {
+    @extend %blockPosition;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
