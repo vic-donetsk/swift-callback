@@ -5,12 +5,39 @@
     bottom:   50px;
     right:    50px;
 
-    z-index:  999;
+    z-index:  990;
 }
 
 .swift-widget-button {
 
     cursor:   pointer;
+
+    &_bigToggler {
+        top: -50px;
+        left: -17px;
+        width: 20px;
+        height: 20px;
+    }
+
+    &_smallToggler {
+        top: -42px;
+        left: -15px;
+        width: 17px;
+        height: 17px;
+    }
+
+    &_togglerIcon {
+        width: 100%;
+        height: 100%;
+    }
+
+    &_mobileToggler {
+        position: absolute;
+        z-index: 999;
+        @include media('t') {
+            display: none;
+        }
+    }
 
     .swift-widget-circle {
         position:                  absolute;
@@ -25,6 +52,18 @@
         animation-duration:        2.5s;
         animation-timing-function: ease-in-out;
         animation-iteration-count: infinite;
+
+        @include media('m-only') {
+            width:                     45px;
+            height:                    45px;
+        }
+
+        &.mod_minimalSize {
+            width: 38px;
+            height: 38px;
+        }
+
+
     }
 
     // main circle with phone
@@ -35,27 +74,39 @@
 
         width:      77px;
         height:     77px;
-        z-index:    5;
+        z-index:    995;
 
         visibility: hidden;
         opacity:    0;
 
+        @include media('m-only') {
+            width:                     45px;
+            height:                    45px;
+        }
+
         img {
-            width:  77px;
-            height: 77px;
+            width:  100%;
+            height: 100%;
         }
 
         &.mod_visible {
             visibility: visible;
             opacity:    1;
         }
+
+        &.mod_minimalSize {
+            width: 38px;
+            height: 38px;
+        }
+
+
     }
 
     // around circles
     #swift-widget-button_circle-2 {
         background-color: #32569a;
         transform: scale(1.25);
-        z-index:          4;
+        z-index:          994;
 
         animation-name:   animation_circle-2;
     }
@@ -63,7 +114,7 @@
     #swift-widget-button_circle-3 {
         background-color: #6380b7;
         transform: scale(1.5);
-        z-index:          3;
+        z-index:          993;
 
         animation-name:   animation_circle-3;
         animation-delay: 0.15s;
@@ -72,7 +123,7 @@
     #swift-widget-button_circle-4 {
         background-color: #9fb3d8;
         transform: scale(1.75);
-        z-index:          2;
+        z-index:          992;
 
         animation-name:   animation_circle-4;
         animation-delay: 0.30s;
@@ -81,7 +132,7 @@
     #swift-widget-button_circle-5 {
         background-color: #d1dff8;
         transform: scale(2);
-        z-index:          1;
+        z-index:          991;
 
         animation-name:   animation_circle-5;
         animation-delay: 0.45s;
