@@ -24,7 +24,7 @@
     z-index: 15;
 
     @include media('t') {
-      max-height: 947px;
+      //max-height: 947px;
       height: 80vh;
       width: calc(0.636 * 80vh);
       padding: 3vh 0 2.7vh;
