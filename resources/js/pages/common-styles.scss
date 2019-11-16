@@ -10,7 +10,6 @@
   }
 
   &_block {
-    @extend %blockPosition;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -28,6 +27,13 @@
       height: 80vh;
       width: calc(0.636 * 80vh);
       padding: 3vh 0 2.7vh;
+    }
+
+    @include media('d') {
+      position: fixed;
+      bottom: 6vh;
+      right: 6vh;
+      z-index: 1000;
     }
 
   }

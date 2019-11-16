@@ -1,12 +1,16 @@
 @import '@/app';
 
-.swift-widget-button {
+.swift-widget-button_wrapper {
     position: fixed;
     bottom:   50px;
     right:    50px;
 
+    z-index:  999;
+}
+
+.swift-widget-button {
+
     cursor:   pointer;
-    z-index:  10;
 
     .swift-widget-circle {
         position:                  absolute;
