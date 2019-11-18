@@ -15,70 +15,83 @@
 
             <div class="swift-widget_rating">
 
-                <input class="star" id="star-5-right" type="radio" v-model="starRating" value="10"/>
-                <label class="star-right" for="star-5-right">
-                    <svg class="svg-icon" viewBox="0 0 22.112 42.059">
-                        <use xlink:href="#star-right"/>
-                    </svg>
-                </label>
-                <input class="star" id="star-5-left" type="radio" v-model="starRating" value="9"/>
-                <label class="star-left" for="star-5-left">
-                    <svg class="svg-icon" viewBox="0 0 22.112 42.059">
-                        <use xlink:href="#star-left"/>
-                    </svg>
-                </label>
+                <form action="">
+                    <input class="star star-5" id="star-5" type="radio" name="star"/>
+                    <label class="star star-5" for="star-5"></label>
+                    <input class="star star-4" id="star-4" type="radio" name="star"/>
+                    <label class="star star-4" for="star-4"></label>
+                    <input class="star star-3" id="star-3" type="radio" name="star"/>
+                    <label class="star star-3" for="star-3"></label>
+                    <input class="star star-2" id="star-2" type="radio" name="star"/>
+                    <label class="star star-2" for="star-2"></label>
+                    <input class="star star-1" id="star-1" type="radio" name="star"/>
+                    <label class="star star-1" for="star-1"></label>
+                </form>
 
-                <input class="star" id="star-4-right" type="radio" v-model="starRating" value="8"/>
-                <label class="star-right" for="star-4-right">
-                    <svg class="svg-icon" viewBox="0 0 22.112 42.059">
-                        <use xlink:href="#star-right"/>
-                    </svg>
-                </label>
-                <input class="star" id="star-4-left" type="radio" v-model="starRating" value="7"/>
-                <label class="star-left" for="star-4-left">
-                    <svg class="svg-icon" viewBox="0 0 22.112 42.059">
-                        <use xlink:href="#star-left"/>
-                    </svg>
-                </label>
+                <!--<input class="star" id="star-5-right" type="radio" v-model="starRating" value="10"/>-->
+                <!--<label class="star-right" for="star-5-right">-->
+                    <!--<svg class="svg-icon" viewBox="0 0 22.112 42.059">-->
+                        <!--<use xlink:href="#star-right"/>-->
+                    <!--</svg>-->
+                <!--</label>-->
+                <!--<input class="star" id="star-5-left" type="radio" v-model="starRating" value="9"/>-->
+                <!--<label class="star-left" for="star-5-left">-->
+                    <!--<svg class="svg-icon" viewBox="0 0 22.112 42.059">-->
+                        <!--<use xlink:href="#star-left"/>-->
+                    <!--</svg>-->
+                <!--</label>-->
 
-                <input class="star" id="star-3-right" type="radio" v-model="starRating" value="6"/>
-                <label class="star-right" for="star-3-right">
-                    <svg class="svg-icon" viewBox="0 0 22.112 42.059">
-                        <use xlink:href="#star-right"/>
-                    </svg>
-                </label>
-                <input class="star" id="star-3-left" type="radio" v-model="starRating" value="5"/>
-                <label class="star-left" for="star-3-left">
-                    <svg class="svg-icon" viewBox="0 0 22.112 42.059">
-                        <use xlink:href="#star-left"/>
-                    </svg>
-                </label>
+                <!--<input class="star" id="star-4-right" type="radio" v-model="starRating" value="8"/>-->
+                <!--<label class="star-right" for="star-4-right">-->
+                    <!--<svg class="svg-icon" viewBox="0 0 22.112 42.059">-->
+                        <!--<use xlink:href="#star-right"/>-->
+                    <!--</svg>-->
+                <!--</label>-->
+                <!--<input class="star" id="star-4-left" type="radio" v-model="starRating" value="7"/>-->
+                <!--<label class="star-left" for="star-4-left">-->
+                    <!--<svg class="svg-icon" viewBox="0 0 22.112 42.059">-->
+                        <!--<use xlink:href="#star-left"/>-->
+                    <!--</svg>-->
+                <!--</label>-->
 
-                <input class="star" id="star-2-right" type="radio" v-model="starRating" value="4"/>
-                <label class="star-right" for="star-2-right">
-                    <svg class="svg-icon" viewBox="0 0 22.112 42.059">
-                        <use xlink:href="#star-right"/>
-                    </svg>
-                </label>
-                <input class="star" id="star-2-left" type="radio" v-model="starRating" value="3"/>
-                <label class="star-left" for="star-2-left">
-                    <svg class="svg-icon" viewBox="0 0 22.112 42.059">
-                        <use xlink:href="#star-left"/>
-                    </svg>
-                </label>
+                <!--<input class="star" id="star-3-right" type="radio" v-model="starRating" value="6"/>-->
+                <!--<label class="star-right" for="star-3-right">-->
+                    <!--<svg class="svg-icon" viewBox="0 0 22.112 42.059">-->
+                        <!--<use xlink:href="#star-right"/>-->
+                    <!--</svg>-->
+                <!--</label>-->
+                <!--<input class="star" id="star-3-left" type="radio" v-model="starRating" value="5"/>-->
+                <!--<label class="star-left" for="star-3-left">-->
+                    <!--<svg class="svg-icon" viewBox="0 0 22.112 42.059">-->
+                        <!--<use xlink:href="#star-left"/>-->
+                    <!--</svg>-->
+                <!--</label>-->
 
-                <input class="star" id="star-1-right" type="radio" v-model="starRating" value="2"/>
-                <label class="star-right" for="star-1-right">
-                    <svg class="svg-icon" viewBox="0 0 22.112 42.059">
-                        <use xlink:href="#star-right"/>
-                    </svg>
-                </label>
-                <input class="star" id="star-1-left" type="radio" v-model="starRating" value="1"/>
-                <label class="star-left" for="star-1-left">
-                    <svg class="svg-icon" viewBox="0 0 22.112 42.059">
-                        <use xlink:href="#star-left"/>
-                    </svg>
-                </label>
+                <!--<input class="star" id="star-2-right" type="radio" v-model="starRating" value="4"/>-->
+                <!--<label class="star-right" for="star-2-right">-->
+                    <!--<svg class="svg-icon" viewBox="0 0 22.112 42.059">-->
+                        <!--<use xlink:href="#star-right"/>-->
+                    <!--</svg>-->
+                <!--</label>-->
+                <!--<input class="star" id="star-2-left" type="radio" v-model="starRating" value="3"/>-->
+                <!--<label class="star-left" for="star-2-left">-->
+                    <!--<svg class="svg-icon" viewBox="0 0 22.112 42.059">-->
+                        <!--<use xlink:href="#star-left"/>-->
+                    <!--</svg>-->
+                <!--</label>-->
+
+                <!--<input class="star" id="star-1-right" type="radio" v-model="starRating" value="2"/>-->
+                <!--<label class="star-right" for="star-1-right">-->
+                    <!--<svg class="svg-icon" viewBox="0 0 22.112 42.059">-->
+                        <!--<use xlink:href="#star-right"/>-->
+                    <!--</svg>-->
+                <!--</label>-->
+                <!--<input class="star" id="star-1-left" type="radio" v-model="starRating" value="1"/>-->
+                <!--<label class="star-left" for="star-1-left">-->
+                    <!--<svg class="svg-icon" viewBox="0 0 22.112 42.059">-->
+                        <!--<use xlink:href="#star-left"/>-->
+                    <!--</svg>-->
+                <!--</label>-->
 
             </div>
         </div>
