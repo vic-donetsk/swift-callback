@@ -6,4 +6,7 @@
     </div>
 </template>
 
+<style lang='scss' scoped>
+    @import 'widget-popup';
+</style>
 <script src="./widget-popup.js"></script>
