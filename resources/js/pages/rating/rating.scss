@@ -16,6 +16,7 @@
     color: #c5daf7;
     text-align: right;
     cursor: pointer;
+
     @include media('m-only') {
       padding-right: 23px;
     }

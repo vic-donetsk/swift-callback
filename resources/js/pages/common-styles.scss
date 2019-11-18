@@ -22,6 +22,8 @@
     text-align: center;
     z-index: 15;
 
+    border-radius: 12px;
+
     @include media('t') {
       //max-height: 947px;
       height: 80vh;
