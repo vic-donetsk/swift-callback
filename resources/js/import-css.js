@@ -1,7 +1,18 @@
-var link = document.createElement("link");
+let stylesLink = document.createElement("link");
 
-link.href = "./css/app.css";
-link.type = "text/css";
-link.rel = "stylesheet";
+stylesLink.href = "./css/app.css?v=13";
+stylesLink.type = "text/css";
+stylesLink.rel = "stylesheet";
 
-document.getElementsByTagName("head")[0].appendChild(link);
+document.getElementsByTagName("head")[0].appendChild(stylesLink);
+
+
+
+let fontsLink = document.createElement("link");
+
+fontsLink.href = "./fonts.css?v=10";
+fontsLink.type = "text/css";
+fontsLink.rel = "stylesheet";
+
+document.getElementsByTagName("head")[0].appendChild(fontsLink);
+
