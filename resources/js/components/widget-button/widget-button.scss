@@ -5,7 +5,7 @@
     bottom:   50px;
     right:    50px;
 
-    z-index:  990;
+    z-index:  2147483637;
 }
 
 .swift-widget-button {
@@ -33,7 +33,7 @@
 
     &_mobileToggler {
         position: absolute;
-        z-index: 999;
+        z-index: 2147483643;
         @include media('t') {
             display: none;
         }
@@ -74,7 +74,7 @@
 
         width:      77px;
         height:     77px;
-        z-index:    995;
+        z-index:    2147483642;
 
         visibility: hidden;
         opacity:    0;
@@ -106,7 +106,7 @@
     #swift-widget-button_circle-2 {
         background-color: #32569a;
         transform: scale(1.25);
-        z-index:          994;
+        z-index:          2147483641;
 
         animation-name:   animation_circle-2;
     }
@@ -114,7 +114,7 @@
     #swift-widget-button_circle-3 {
         background-color: #6380b7;
         transform: scale(1.5);
-        z-index:          993;
+        z-index:          2147483640;
 
         animation-name:   animation_circle-3;
         animation-delay: 0.15s;
@@ -123,7 +123,7 @@
     #swift-widget-button_circle-4 {
         background-color: #9fb3d8;
         transform: scale(1.75);
-        z-index:          992;
+        z-index:          2147483639;
 
         animation-name:   animation_circle-4;
         animation-delay: 0.30s;
@@ -132,7 +132,7 @@
     #swift-widget-button_circle-5 {
         background-color: #d1dff8;
         transform: scale(2);
-        z-index:          991;
+        z-index:          2147483638;
 
         animation-name:   animation_circle-5;
         animation-delay: 0.45s;
