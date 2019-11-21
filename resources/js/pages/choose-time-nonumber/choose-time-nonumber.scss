@@ -4,6 +4,9 @@
 
   &_block {
     height: auto;
+    @include media('d') {
+      height: 80vh;
+    }
   }
 
   &_exit-double {
@@ -35,6 +38,12 @@
     width: 1.5vh;
     height: 1.5vh;
     margin: 0 0.5vh 0 0.9vh;
+  }
+
+  &_img {
+    @include media('d') {
+      margin-top: -1vh;
+    }
   }
 
   &_img-ok {
