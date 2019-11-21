@@ -14,7 +14,7 @@ export default {
             this.visibleToggler = false;
             SwiftWidgetEventBus.$emit('go', 'page-call');
 
-            if (window.width < 1280) {
+            if (window.innerWidth < 1280) {
                 document.body.classList.add("swift-widget-hide-scroll");
                 document.documentElement.classList.add("swift-widget-hide-scroll");
             }
