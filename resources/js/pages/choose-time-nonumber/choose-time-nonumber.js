@@ -35,10 +35,10 @@ export default {
         select() {
             if (this.callStatus === 1 && this.phoneNumber.length && this.phoneNumber.indexOf('*') === -1) {
                 // client enter correct phone number
-                if (window.innerWidth < 1280) {
+                //if (window.innerWidth < 1280) {
                     let blockOk = document.querySelector('.swift-widget');
                     blockOk.style.alignItems = 'inherit';
-                }
+                //}
                 this.callStatus = 2;
 
                 let currentDate = new Date();
