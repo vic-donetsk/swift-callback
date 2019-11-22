@@ -101,6 +101,10 @@ export default {
             if (this.status === 1) {
                 this.status = 2;
             } else {
+                if (window.innerWidth < 1280) {
+                    let blockOk = document.querySelector('.swift-widget');
+                    blockOk.style.alignItems = 'inherit';
+                }
                 this.status = 3;
                 this.approvedDate = this.day + ' (' + this.date + ') ';
                 this.approvedTime = this.hours + ':' + this.minutes;
