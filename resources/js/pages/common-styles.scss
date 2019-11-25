@@ -7,11 +7,14 @@
     height:          100%;
 
     @include media('t') {
-        padding: 10vh;
+        //padding: 10vh;
     }
 
     &_block {
-        position: relative;
+        position:        fixed;
+        bottom:          0;
+        right:           0;
+
         display:         flex;
         flex-direction:  column;
         justify-content: space-between;
@@ -34,10 +37,9 @@
         }
 
         @include media('d') {
-            position: fixed;
-            bottom:   6vh;
-            right:    6vh;
-            z-index:  2147483647;
+            bottom:  6vh;
+            right:   6vh;
+            z-index: 2147483647;
         }
 
     }
