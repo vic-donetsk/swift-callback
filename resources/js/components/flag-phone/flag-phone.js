@@ -33,7 +33,7 @@ export default {
             // try {
             //     require(`./flags/${flagName.toLowerCase()}.svg`);
             //     console.log('try');
-                return `./${this.$imgDomain}/flags/${flagName.toLowerCase()}.svg`;
+                return `${this.$imgDomain}/img/flags/${flagName.toLowerCase()}.svg`;
             // } catch (e) {
             //     require("./flags/md.svg");
             //     console.log('catch');

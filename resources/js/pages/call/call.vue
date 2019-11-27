@@ -5,7 +5,7 @@
                 <exit-block page="call"></exit-block>
 
                 <div v-if="firstApelWindow === true">
-                    <img class="swift-widget_img" :src="$imgDomain + '/illustration/call.svg'" alt="SWIFT Call">
+                    <img class="swift-widget_img" :src="$imgDomain + '/img/illustration/call.svg'" alt="SWIFT Call">
                     <div class="swift-widget_text">
                         {{__("Hi, you want us to come back with a call within 28 seconds?")}}
                     </div>
@@ -22,7 +22,7 @@
                         <a href="#" target="_blank" class="swift-widget_callMode-link">{{ __("Accept the terms of the agreement.") }}</a>
                     </div>
                     <div class="swift-widget_callback" @click="chooseTime">
-                        <img class="swift-widget_clock" :src="$imgDomain + '/clock.svg'" alt="swift">
+                        <img class="swift-widget_clock" :src="$imgDomain + '/img/clock.svg'" alt="swift">
                         {{ __("Choose an appropriate time for the call") }}
                     </div>
                 </div>

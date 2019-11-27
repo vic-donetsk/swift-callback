@@ -3,7 +3,7 @@
         <div class="swift-widget_block">
             <div class="swift-widget_upper-section">
                 <exit-block page="vk"></exit-block>
-                <img class="swift-widget_img" :src="$imgDomain + '/illustration/vk.svg'" alt="SWIFT Viber">
+                <img class="swift-widget_img" :src="$imgDomain + '/img/illustration/vk.svg'" alt="SWIFT Viber">
                 <div class="swift-widget_text">
                     {{__("We are also on VKontakte...")}}
                 </div>

@@ -3,7 +3,7 @@
         <div class="swift-widget_block">
             <div class="swift-widget_upper-section" v-if="status == 1">
                 <exit-block page="notWorking"></exit-block>
-                <img class="swift-widget_img" :src="$imgDomain + '/illustration/closed.svg'" alt="SWIFT Call">
+                <img class="swift-widget_img" :src="$imgDomain + '/img/illustration/closed.svg'" alt="SWIFT Call">
                 <div class="swift-widget_text">
                     {{__("Currently we are not in the working chart...")}}
                 </div>
@@ -37,7 +37,7 @@
 
             <div class="swift-widget_upper-section" v-if="status == 2">
                 <exit-block page="notWorking"></exit-block>
-                <img class="swift-widget_img-ok" :src="$imgDomain + '/illustration/ok-icon.svg'" alt="SWIFT OK">
+                <img class="swift-widget_img-ok" :src="$imgDomain + '/img/illustration/ok-icon.svg'" alt="SWIFT OK">
                 <div class="swift-widget_text">
                     {{__("You commanded a call")}}
                     {{approvedDate}}

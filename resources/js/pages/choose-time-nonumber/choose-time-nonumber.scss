@@ -2,13 +2,6 @@
 
 .swift-widget {
 
-  &_block {
-    height: auto;
-    @include media('d') {
-      height: 80vh;
-    }
-  }
-
   &_exit-double {
     display: flex;
     justify-content: space-between;
@@ -87,7 +80,8 @@
       -ms-appearance: none;
       appearance: none !important;
 
-      background: url(/img/angle-down.svg) no-repeat 93% 50%;
+      background: url("#{$imgDomain}/img/angle-down.svg") no-repeat 93% 50%;
+
       background-size: 8px;
 
       width: 100%;

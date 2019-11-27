@@ -3,7 +3,7 @@
         <div class="swift-widget-button" :class="{mod_minimalSize: !isPulsing}" @click="open">
 
             <div id="swift-widget-button_circle-1" :class="{mod_visible: visibleButton, mod_minimalSize: !isPulsing}">
-                <img :src="$imgDomain + '/pulse-button/ellipse_1.svg'" alt="SWIFT Button">
+                <img :src="$imgDomain + '/img/pulse-button/ellipse_1.svg'" alt="SWIFT Button">
             </div>
             <div id="swift-widget-button_circle-2" class="swift-widget-circle" v-if="visibleCircles"></div>
             <div id="swift-widget-button_circle-3" class="swift-widget-circle" v-if="visibleCircles"></div>
