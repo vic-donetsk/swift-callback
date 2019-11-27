@@ -22,7 +22,7 @@
                     </div>
                     <exit-block page="chooseTimeNonumber"></exit-block>
                 </div>
-                <img class="swift-widget_img" src="img/illustration/select-time.svg" alt="SWIFT Call">
+                <img class="swift-widget_img" :src="$imgDomain + '/illustration/select-time.svg'" alt="SWIFT Call">
                 <div class="swift-widget_text">
                     {{__("Choose an hour that suits you and us we call as soon as possible")}}
                 </div>
@@ -56,7 +56,7 @@
 
             <div class="swift-widget_upper-section" v-if="callStatus === 2">
                 <exit-block page="chooseTimeNonumber"></exit-block>
-                <img class="swift-widget_img-ok" src="img/illustration/ok-icon.svg" alt="SWIFT OK">
+                <img class="swift-widget_img-ok" :src="$imgDomain + 'illustration/ok-icon.svg'" alt="SWIFT OK">
                 <div class="swift-widget_text">
                     {{__("You commanded a call")}}
                     {{approvedDate}}

@@ -3,7 +3,7 @@
         <div class="swift-widget_block">
             <div class="swift-widget_upper-section">
                 <exit-block page="viber"></exit-block>
-                <img class="swift-widget_img" src="img/illustration/viber.svg" alt="SWIFT Viber">
+                <img class="swift-widget_img" :src="$imgDomain + '/illustration/viber.svg'" alt="SWIFT Viber">
                 <div class="swift-widget_text">
                     {{__("We are also on Viber...")}}
                 </div>

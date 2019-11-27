@@ -5,7 +5,7 @@
                 <div class="swift-widget_chat-header">
                     <div class="swift-widget_chat-header_info">
                         <div class="swift-widget_chat-header_info-img">
-                            <img class="swift-widget-img-face" src="/img/face.svg" alt="SWIFT">
+                            <img class="swift-widget-img-face" :src="$imgDomain + '/face.svg'" alt="SWIFT">
                         </div>
                         <div class="swift-widget_chat-header_info-person">
                             <div class="person_company">SwiftCallBack</div>
@@ -33,7 +33,7 @@
                         <div class="swift-widget_chat-message"
                              :class="message.isManager ? 'mod_manager-message' : 'mod_client-message'">
                             <div v-if="message.isManager" class="swift-widget_chat-avatar">
-                                <img src="/img/face.svg" class="avatar_icon" alt="SWIFT">
+                                <img :src="$imgDomain + '/face.svg'" class="avatar_icon" alt="SWIFT">
                             </div>
                             <div class="swift-widget_message-block"
                                  :class="message.isManager ? 'mod_manager' : 'mod_client'">
@@ -76,7 +76,7 @@
                            placeholder="Scrie un mesaj…"
                            v-model="currentMessage"
                            @keyup="handleEnter">
-                    <img src="/img/send_button.svg" class="chat-newMessage_send" @click="send" alt="send">
+                    <img :src="$imgDomain + '/send_button.svg'" class="chat-newMessage_send" @click="send" alt="send">
                 </div>
 
             </div>

@@ -3,7 +3,7 @@
         <div class="swift-widget_block">
             <div class="swift-widget_upper-section">
                 <exit-block page="whatsapp"></exit-block>
-                <img class="swift-widget_img" src="img/illustration/whatsapp.svg" alt="SWIFT Viber">
+                <img class="swift-widget_img" :src="$imgDomain + '/illustration/whatsapp.svg'" alt="SWIFT Viber">
                 <div class="swift-widget_text">
                     {{__("We are also on WhatsApp...")}}
                 </div>

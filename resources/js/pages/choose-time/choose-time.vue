@@ -22,7 +22,7 @@
                     </div>
                     <exit-block page="chooseTime"></exit-block>
                 </div>
-                <img class="swift-widget_img" src="img/illustration/select-time.svg" alt="SWIFT Call">
+                <img class="swift-widget_img" :src="$imgDomain + '/illustration/select-time.svg'" alt="SWIFT Call">
                 <div class="swift-widget_text">
                     {{__("Choose an hour that suits you and us we call as soon as possible")}}
                 </div>
@@ -31,25 +31,25 @@
                     <div class="swift-widget_selection-block">
 
                         <div class="swift-widget_time-setup" v-if="status == 1">
-                            <img src="/img/angle-up.svg" @click="plusHour" alt="swift">
+                            <img :src="$imgDomain + '/angle-up.svg'" @click="plusHour" alt="swift">
                             <input type="number" :value="hours">
-                            <img src="/img/angle-down.svg" @click="minusHour" alt="swift">
+                            <img :src="$imgDomain + '/angle-down.svg'" @click="minusHour" alt="swift">
                         </div>
                         <div class="swift-widget_time-setup" v-if="status == 1">
                             :
                         </div>
                         <div class="swift-widget_time-setup" v-if="status == 1">
-                            <img src="/img/angle-up.svg" @click="plusMinute " alt="swift">
+                            <img :src="$imgDomain + '/angle-up.svg'" @click="plusMinute " alt="swift">
                             <input type="number" :value="minutes">
-                            <img src="/img/angle-down.svg" @click="minusMinute" alt="swift">
+                            <img :src="$imgDomain + '/angle-down.svg'" @click="minusMinute" alt="swift">
                         </div>
 
                         <div class="swift-widget_time-setup" v-if="status == 2">
-                            <img src="/img/angle-up.svg" @click="plusDay" alt="swift">
+                            <img :src="$imgDomain + '/angle-up.svg'" @click="plusDay" alt="swift">
                             <div class="swift-widget_selection-day">{{day}}</div>
                             <div class="swift-widget_selection-date">({{date}})</div>
 
-                            <img src="/img/angle-down.svg" @click="minusDay" alt="swift">
+                            <img :src="$imgDomain + '/angle-down.svg'" @click="minusDay" alt="swift">
                         </div>
 
                     </div>
@@ -65,7 +65,7 @@
 
             <div class="swift-widget_upper-section" v-if="status == 3">
                 <exit-block page="chooseTime"></exit-block>
-                <img class="swift-widget_img-ok" src="img/illustration/ok-icon.svg" alt="SWIFT OK">
+                <img class="swift-widget_img-ok" :src="$imgDomain + '/illustration/ok-icon.svg'" alt="SWIFT OK">
                 <div class="swift-widget_text">
                     {{__("You commanded a call")}}
                     {{approvedDate}}

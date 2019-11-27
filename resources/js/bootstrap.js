@@ -56,6 +56,8 @@ Vue.component('page-rating', PageRating);
 const LayoutComponent = Vue.extend(WidgetComponent);
 const vm = new LayoutComponent();
 
+// domain for all image files in project
+Vue.prototype.$imgDomain = 'images1';
 
 var script_link = document.getElementsByTagName('script')[0].src;
 var url = new URL(script_link);

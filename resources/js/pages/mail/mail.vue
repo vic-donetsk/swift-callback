@@ -3,7 +3,7 @@
         <div class="swift-widget_block">
             <div class="swift-widget_upper-section">
                 <exit-block page="mail"></exit-block>
-                <img class="swift-widget_img" src="img/illustration/email.svg" alt="SWIFT Email">
+                <img class="swift-widget_img" :src="$imgDomain + '/illustration/email.svg'" alt="SWIFT Email">
                 <div class="swift-widget_text">
                     {{__("Leave your message and we will respond to your email.")}}
                 </div>
